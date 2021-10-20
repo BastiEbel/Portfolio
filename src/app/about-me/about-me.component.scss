@@ -5,6 +5,7 @@
     align-items: center;
     background-color: black;
     padding-left: 80px;
+    padding-right: 80px;
     height: 50vh;
 
     h1{
@@ -13,8 +14,8 @@
     }
 
     img{
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         border-radius: 50%;
     }
 
@@ -24,6 +25,11 @@
         height: 50px;
         border: 2px solid #2DFCD8;
         color: #2DFCD8;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -38,5 +44,12 @@
         width: 80px;
         background-color: white;
         border-radius: 50%;
+        margin-bottom: 80px;
+        border: 2px solid white;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
 }
