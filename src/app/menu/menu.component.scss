@@ -11,12 +11,14 @@
     }
 
     a{
+        font-size: 18px;
         color: white;
         text-decoration: none;
         margin-left: 40px;
 
         &:hover{
-            color: rgba(255, 255, 255, 0.808);
+            color: #fa2759;
+            transform: scale(1.1);
         }
     }
 

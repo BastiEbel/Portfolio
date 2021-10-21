@@ -1,5 +1,4 @@
 .container-about-me{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +10,15 @@
     h1{
         font-size: 64px;
         color: white;
+        margin-bottom: 80px;
+    }
+
+    .my-name{
+        color: #FA2759;
+    }
+
+    .other-color{
+        color: #2DFCD8;
     }
 
     img{
@@ -21,14 +29,16 @@
 
     button{
         background-color: black;
-        width: 150px;
-        height: 50px;
+        font-size: 18px;
+        width: 250px;
+        height: 80px;
         border: 2px solid #2DFCD8;
         color: #2DFCD8;
 
         &:hover{
             cursor: pointer;
-            transform: scale(1.1);
+            background-color: #2DFCD8;
+            color: white;
         }
     }
 }
