@@ -1,4 +1,4 @@
-.header-container{
+header{
     background-color: black;
     display: flex;
     align-items: center;
@@ -21,6 +21,20 @@
             transform: scale(1.1);
         }
     }
+}
 
-    
+.darkLinks{
+    a {
+        color: black;
+    }
+
+    &:hover{
+        color: rgba(0, 0, 0, 0.8);
+    }
+}  
+
+.headerWhite{
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }

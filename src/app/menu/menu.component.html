@@ -1,9 +1,10 @@
-<header class="header-container">
-    <img src="assets/img/logo-white.png">
+<header [class.headerWhite]="imprintMode">
+    <img *ngIf="!imprintMode" routerLink="/" src="assets/img/logo-white.png">
+    <img *ngIf="imprintMode" routerLink="/" src="assets/img/logo-black.png">
 
-    <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
+    <div [class.darkLinks]="imprintMode">
+        <a routerLink="/">Home</a>
+        <a href="#explain-about-me">About</a>
+        <a href="#mywork">My Work</a>
     </div>
 </header>
