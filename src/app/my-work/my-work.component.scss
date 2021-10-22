@@ -1,0 +1,81 @@
+.container-my-work{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+
+    h2{
+        font-size: 36px;
+        color: white;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .selection-switches{
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-bottom: 60px;
+        
+        
+        .selection{
+            height: 80px;
+            width: 200px;
+            border: 2px solid #FA2759;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #FA2759;
+                color: white;
+            }
+        }
+    }
+
+    .container-picture{
+        display: flex;
+        justify-content: center;
+
+        img{
+            object-fit: cover;
+            height: 300px;
+            width: 500px;
+            margin: 25px;
+        }
+
+        .el-pollo-loco{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 500px;
+            margin: 25px;
+            background-image: url('/assets/img/el-pollo-loco.png');
+            background-size: 100%;
+            background-position: center;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                width: 180px;
+                height: 60px;
+                border: 3px solid #FA2759;
+                text-decoration: none;
+                color: #FA2759;
+                font-size: 18px;
+
+                &:hover{
+                    color: white;
+                    background-color: #FA2759;
+                }
+            }
+        }
+    }
+}
