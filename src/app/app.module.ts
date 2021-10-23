@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
-import { MyWorkComponent } from './my-work/my-work.component';
-import { ExplainAboutMeComponent } from './explain-about-me/explain-about-me.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
-import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './home/menu/menu.component';
+import { AboutMeComponent } from './home/about-me/about-me.component';
+import { MySkillsComponent } from './home/my-skills/my-skills.component';
+import { MyWorkComponent } from './home/my-work/my-work.component';
+import { ExplainAboutMeComponent } from './home/explain-about-me/explain-about-me.component';
+import { ContactMeComponent } from './home/contact-me/contact-me.component';
+import { FooterComponent } from './home/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { HomeComponent } from './home/home.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,12 @@ import { ImprintComponent } from './imprint/imprint.component';
     ExplainAboutMeComponent,
     ContactMeComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    ScrollToModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
