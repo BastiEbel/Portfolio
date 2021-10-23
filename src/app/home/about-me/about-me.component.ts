@@ -13,4 +13,11 @@ export class AboutMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  tomyskill(){
+    document.getElementById('myskills')?.scrollIntoView();
+  }
+
+  toMyContact(){
+    document.getElementById('contactMe')?.scrollIntoView();
+  }
 }

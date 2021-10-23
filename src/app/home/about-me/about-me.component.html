@@ -1,12 +1,13 @@
 <div class="container-about-me">
     <div>
-        <h1>Hi,<br> I´m <span class="my-name">Sebastian</span> Ebel<br> 
+        <h1>Hi,<br> I´m <span class="my-name">Sebastian</span> Ebel<br>
             Front End develop<span class="other-color">e</span>r</h1>
-
-        <button>Contact me</button>
+        <div (click)="toMyContact()" class="container-contactMe">
+            Contact me
+        </div>
     </div>
     <div>
         <img src="assets/img/profile.png">
     </div>
 </div>
-<div class="container-arrow"><a href="#myskill"><img src="assets/img/arrow-bottom.ico"></a></div>
+<div class="container-arrow"><a (click)="tomyskill()"><img src="assets/img/arrow-bottom.ico"></a></div>

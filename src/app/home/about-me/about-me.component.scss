@@ -27,14 +27,16 @@
         border-radius: 50%;
     }
 
-    button{
-        background-color: black;
+    .container-contactMe{
+        height: 50px;
+        width: 180px;
         font-size: 18px;
-        width: 250px;
-        height: 80px;
-        border: 2px solid #2DFCD8;
         color: #2DFCD8;
-
+        border: 2px solid #2DFCD8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         &:hover{
             cursor: pointer;
             background-color: #2DFCD8;

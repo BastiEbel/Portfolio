@@ -13,4 +13,11 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toAboutMe(){
+    document.getElementById('aboutMe')?.scrollIntoView();
+  }
+
+  toMyWork(){
+    document.getElementById('myWork')?.scrollIntoView();
+  }
 }

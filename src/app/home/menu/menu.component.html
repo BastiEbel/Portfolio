@@ -4,8 +4,8 @@
 
     <div [class.darkLinks]="imprintMode">
         <a routerLink="/">Home</a>
-        <a href="#explain-about-me">About</a>
-        <a href="#my-work">My Work</a>
+        <a (click)="toAboutMe()">About Me</a>
+        <a (click)="toMyWork()">My Work</a>
         <a href="/imprint">Imprint</a>
     </div>
 </header>
