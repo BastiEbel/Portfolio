@@ -132,9 +132,29 @@
                 }
 
                 .my-journey-pic{
-                    width: 80px;
-                    height: 80px;
+                    width: 50px;
+                    height: 50px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .container{
+        padding-bottom: 20px;
+    }
+
+    .container-my-journey{
+
+        .my-journey{
+
+            .new-challenges{
+                margin-top: 40px;
+            }
+            .my-journey-pic{
+                width: 50px;
+                height: 50px;
             }
         }
     }

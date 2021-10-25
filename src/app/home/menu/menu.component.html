@@ -2,10 +2,26 @@
     <img *ngIf="!imprintMode" routerLink="/" src="assets/img/logo-white.png">
     <img *ngIf="imprintMode" routerLink="/" src="assets/img/logo-black.png">
 
-    <div [class.darkLinks]="imprintMode">
+    <div class="mobile-modus" [class.darkLinks]="imprintMode">
         <a routerLink="/">Home</a>
         <a (click)="toAboutMe()">About Me</a>
         <a (click)="toMyWork()">My Work</a>
         <a href="/imprint">Imprint</a>
     </div>
+    <div class="body">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+              <div class="main-content-wrapper">
+                <a routerLink="/">Home</a>
+                <a (click)="toAboutMe()">About Me</a>
+                <a (click)="toMyWork()">My Work</a>
+                <a href="/imprint">Imprint</a>
+              </div>
+          </div>
+      </div>
 </header>

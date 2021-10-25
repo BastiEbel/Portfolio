@@ -136,3 +136,21 @@
         }
     }   
 }
+
+@media(max-width: 350px){
+    .container-my-work{
+        
+        .container-picture{
+            
+            img{
+                height: 100px;
+                width: 200px;
+            }
+
+            .el-pollo-loco{
+                height: 100px;
+                width: 200px;
+            }
+        }
+    }
+}
