@@ -39,3 +39,20 @@ header{
     background-color: white;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 720px) {
+    header{
+        padding-left: 40px;
+        padding-right: 40px;
+       
+        a{
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sidebarIconToggle{
+        display:block
+     }
+  }

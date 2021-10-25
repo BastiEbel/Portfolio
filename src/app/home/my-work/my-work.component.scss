@@ -79,3 +79,60 @@
         }
     }
 }
+
+@media(max-width: 1150px){
+    .container-my-work{
+        
+        .container-picture{
+            
+            img{
+                height: 250px;
+                width: 400px;
+            }
+
+            .el-pollo-loco{
+                height: 250px;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .container-my-work{
+        
+        .container-picture{
+            
+            img{
+                height: 200px;
+                width: 300px;
+            }
+
+            .el-pollo-loco{
+                height: 200px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container-my-work{
+
+        h2{
+            margin-bottom: 60px;
+        }
+        .selection-switches{
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .selection{
+                margin-bottom: 20px;
+            }
+        }
+
+        .container-picture{
+            flex-direction: column;
+        }
+    }   
+}

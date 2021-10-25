@@ -68,3 +68,46 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .container-contact{
+        form{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .container-contact{
+        .contact{
+            margin-left: 10%;
+        }
+        span{
+            width: 80%;
+        }
+
+        form{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container-contact{
+        .contact{
+            margin-left: 5%;
+        }
+
+        h1{
+            font-size: 36px;
+        }
+
+        span{
+            width: 90%;
+        }
+
+        form{
+            width: 90%;
+        }
+    }
+}

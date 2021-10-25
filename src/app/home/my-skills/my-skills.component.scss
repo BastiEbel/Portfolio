@@ -19,6 +19,9 @@
     align-items: center;
 
     .my-skills{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         font-size: 18px;
         height: 150px;
         width: 250px;
@@ -32,7 +35,6 @@
 
     .icon-img{
         margin-top: -40px;
-        margin-left: 85px;
         margin-bottom: 20px;
         z-index: 1;
         background-color: white;
@@ -47,6 +49,44 @@
         img{
             height: 50px;
             width: 50px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-skills{
+
+        .my-skills{
+            height: 100px;
+            width: 200px;
+        }
+
+        .icon-img{
+            margin-bottom: 15px;
+            width: 60px;
+            height: 60px;
+        }
+
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container-skills{
+        flex-direction: column;
+
+        .my-skills{
+            width: 250px;
+            height: 150px;
+        }
+
+        .icon-img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
         }
     }
 }

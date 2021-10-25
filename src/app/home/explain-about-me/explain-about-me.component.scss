@@ -75,3 +75,67 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .container-explain{
+        .explain-me{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+
+            .short-explain{
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .container-my-journey{
+        .my-journey{
+            height: 450px;
+
+            h4{
+                font-size: 20px;
+            }
+
+            .my-journey-pic{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container{
+
+        .container-explain{
+            
+            .explain-me{
+                flex-direction: column;
+
+                img{
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .container-my-journey{
+            flex-direction: column;
+
+            .my-journey{
+                width: 80%;
+                height: 300px;
+
+                .new-challenges{
+                    margin-top: 70px;
+                }
+
+                .my-journey-pic{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

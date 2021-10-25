@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .container-footer{
+        padding-right: 20px;
+
+        .imprint{
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .container-footer{
+        padding-right: 10px;
+
+        .imprint{
+            margin-left: 20px;
+        }
+    }
+}
