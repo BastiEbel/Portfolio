@@ -68,6 +68,8 @@
 
 @media (max-width: 1250px){
     .container-about-me{
+        padding-top: 20px;
+
 
         h1{
             font-size: 48px;
@@ -125,10 +127,39 @@
         h1{
             font-size: 32px;
         }
+
+        img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .container-contactMe{
+            margin-bottom: 10px;
+        }
     }
 }
 
-@media (max-width: 430px) {
+@media (max-height: 820px) {
+    .container-about-me{
+        height: 100%;
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .container-arrow{
+        img{
+            height: 50px;
+            width: 50px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
     .container-about-me{
         .container-contactMe{
             width: 50%;
@@ -138,23 +169,33 @@
             font-size: 24px;
         }
         img{
-            height: 150px;
-            width: 150px;
+            height: 120px;
+            width: 120px;
         }
     }
 
     .container-arrow{
         img{
-            margin-top: 0px;
+            margin-bottom: 30px;
         }
     }
 }
 
 @media (max-width: 350px) {
     .container-about-me{
+        height: 100%;
+
+        h1{
+            font-size: 18px;
+        }
         .container-contactMe{
             width: 60%;
             margin-left: 20%;
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
         }
     }
 }

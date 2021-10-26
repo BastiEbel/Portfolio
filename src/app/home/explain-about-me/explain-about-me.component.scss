@@ -140,6 +140,19 @@
     }
 }
 
+@media (max-width: 420px) {
+    .container-explain{
+
+        .explain-me{
+
+            img{
+                height: 120px;
+                width: 120px;
+            }
+        }
+    }
+}
+
 @media (max-width: 300px) {
     .container{
         padding-bottom: 20px;
