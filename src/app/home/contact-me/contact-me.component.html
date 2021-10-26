@@ -2,8 +2,8 @@
     <div class="contact">
         <h1>Contact me.</h1>
         <span>Get in touch via the form below, or by emailing
-            <span class="email-contact">email@sebastian.com</span></span>
-        <form action="" onsubmit="formContact()">
+            <span class="email-contact">sebastianebel@hotmail.de</span></span>
+        <form action="mailto:sebastianebel@hotmail.de" onsubmit="formContact()">
             <span>Name<span class="must-have">*</span></span>
             <input type="text" placeholder="Enter your name" required>
             <span>Email address<span class="must-have">*</span></span>
@@ -11,7 +11,7 @@
             <span>Message<span class="must-have">*</span></span>
             <textarea placeholder="Enter your message" required></textarea>
             <div class="send-button">
-                <a type="submit" href="#">Send</a>
+                <a type="submit" onclick="this.closest('form').submit();return false;">Send</a>
             </div>
         </form>
     </div>
