@@ -33,7 +33,7 @@ header{
             /* overflow: none; */
             width: 50%;
             z-index: 100;
-            transform: translateY(-300px); /*change here related your menu height*/
+            transform: translateY(-400px); /*change here related your menu height*/
         }
         .main-content-wrapper a{
             width: 100%;
@@ -156,7 +156,7 @@ header{
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     header{
         padding-left: 40px;
         padding-right: 40px;
@@ -166,7 +166,7 @@ header{
         }
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     header{
         .mobile-modus{
             display: none;

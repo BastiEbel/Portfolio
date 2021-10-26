@@ -13,6 +13,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     ContactMeComponent,
     FooterComponent,
     ImprintComponent,
-    HomeComponent
+    HomeComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,
