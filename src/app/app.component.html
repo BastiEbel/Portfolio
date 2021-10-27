@@ -1,2 +1,4 @@
 <app-menu [imprintMode]="router.url !== '/'"></app-menu>
+<div [class.container]="router.url !== '/'">
 <router-outlet></router-outlet>
+</div>

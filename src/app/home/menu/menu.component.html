@@ -4,10 +4,10 @@
 
     <div class="mobile-modus" [class.darkLinks]="imprintMode">
         <a routerLink="/">Home</a>
-        <a (click)="toAboutMe()">About Me</a>
-        <a (click)="toMyWork()">My Work</a>
-        <a href="/imprint">Imprint</a>
-        <a routerLink="/data-protection">Data Protection</a>
+        <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
+        <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
+        <a routerLinkActive="d-none" routerLink="/imprint">Imprint</a>
+        <a routerLinkActive="d-none" routerLink="/data-protection">Data Protection</a>
     </div>
     <div class="body">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -19,10 +19,10 @@
         <div id="sidebarMenu">
               <div class="main-content-wrapper">
                 <a routerLink="/">Home</a>
-                <a (click)="toAboutMe()">About Me</a>
-                <a (click)="toMyWork()">My Work</a>
-                <a href="/imprint">Imprint</a>
-                <a routerLink="/data-protection">Data Protection</a>
+                <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
+                <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
+                <a routerLinkActive="d-none" routerLink="/imprint">Imprint</a>
+                <a routerLinkActive="d-none" routerLink="/data-protection">Data Protection</a>
               </div>
           </div>
       </div>
