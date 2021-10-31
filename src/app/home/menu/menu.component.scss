@@ -185,12 +185,23 @@ header{
         }
     }
 }
+@media (max-width: 550px){
+    header{
+        #sidebarMenu{
+            width: 60%;
+        }
+    }
+}
 
 @media (max-width: 400px) {
     header{
         img{
             margin-top: 10px;
             height: 50px;
+        }
+
+        #sidebarMenu{
+            width: 80%;
         }
     }
 }
