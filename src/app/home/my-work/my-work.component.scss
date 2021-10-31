@@ -1,62 +1,103 @@
-.container-my-work{
+.container-my-work {
     background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-bottom: 80px;
 
-    h2{
+    h2 {
         font-size: 36px;
         color: white;
         margin-bottom: 80px;
         margin-top: 80px;
     }
 
-    .selection-switches{
+    .selection-switches {
         display: flex;
         justify-content: center;
         color: white;
         margin-bottom: 60px;
         
-        
-        .selection{
+        .isSelected{
+            background-color: #fa2759;
+            color: white;
+        }
+
+        .selection {
             height: 80px;
             width: 200px;
-            border: 2px solid #FA2759;
+            border: 2px solid #fa2759;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 10px;
             margin-right: 10px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
-                background-color: #FA2759;
+                background-color: #fa2759;
                 color: white;
             }
         }
     }
 
-    .container-picture{
+    .d-none{
+        display: none;
+    }
+
+    .container-picture {
         display: flex;
         justify-content: center;
 
-        img{
+        
+
+        img {
             object-fit: cover;
-            height: 300px;
+            height: 250px;
             width: 500px;
             margin: 25px;
         }
 
-        .el-pollo-loco{
+        .el-pollo-loco {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
+            height: 250px;
             width: 500px;
             margin: 25px;
-            background-image: url('/assets/img/el-pollo-loco.png');
+            background-image: url("/assets/img/el-pollo-loco.png");
             background-size: 100%;
+            background-position: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                width: 180px;
+                height: 60px;
+                border: 3px solid #fa2759;
+                text-decoration: none;
+                color: #fa2759;
+                font-size: 18px;
+
+                &:hover {
+                    color: white;
+                    background-color: #fa2759;
+                }
+            }
+        }
+
+        .lieferando{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 500px;
+            margin: 25px;
+            background-image: url('/assets/img/lieferando.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
             background-position: center;
 
             a{
@@ -77,20 +118,129 @@
                 }
             }
         }
+
+        .pokedex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 500px;
+            margin: 25px;
+            background-image: url('/assets/img/pokedex.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                width: 180px;
+                height: 60px;
+                border: 3px solid #FA2759;
+                text-decoration: none;
+                color: #FA2759;
+                font-size: 18px;
+
+                &:hover{
+                    color: white;
+                    background-color: #FA2759;
+                }
+            }
+        }
+
+        .join {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 500px;
+            margin: 25px;
+            background-image: url("/assets/img/join-gruppenarbeit.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                width: 180px;
+                height: 60px;
+                border: 3px solid #fa2759;
+                text-decoration: none;
+                color: #fa2759;
+                font-size: 18px;
+
+                &:hover {
+                    color: white;
+                    background-color: #fa2759;
+                }
+            }
+        }
+
+        .angularSite {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 500px;
+            margin: 25px;
+            background-image: url("/assets/img/angularSite.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            a {
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.699);
+                width: 180px;
+                height: 60px;
+                border: 3px solid #fa2759;
+                text-decoration: none;
+                color: #fa2759;
+                font-size: 18px;
+
+                &:hover {
+                    color: white;
+                    background-color: #fa2759;
+                }
+            }
+        }
     }
 }
 
-@media(max-width: 1150px){
-    .container-my-work{
-        
-        .container-picture{
-            
-            img{
+@media (max-width: 1150px) {
+    .container-my-work {
+        .container-picture {
+            img {
                 height: 250px;
                 width: 400px;
             }
 
-            .el-pollo-loco{
+            .el-pollo-loco {
+                height: 250px;
+                width: 400px;
+            }
+
+            .angularSite{
+                height: 250px;
+                width: 400px;
+            }
+
+            .join{
+                height: 250px;
+                width: 400px;
+            }
+
+            .lieferando{
+                height: 250px;
+                width: 400px;
+            }
+
+            .pokedex{
                 height: 250px;
                 width: 400px;
             }
@@ -98,17 +248,35 @@
     }
 }
 
-@media(max-width: 1000px){
-    .container-my-work{
-        
-        .container-picture{
-            
-            img{
+@media (max-width: 1000px) {
+    .container-my-work {
+        .container-picture {
+            img {
                 height: 200px;
                 width: 300px;
             }
 
-            .el-pollo-loco{
+            .el-pollo-loco {
+                height: 200px;
+                width: 300px;
+            }
+
+            .angularSite{
+                height: 200px;
+                width: 300px;
+            }
+
+            .join{
+                height: 200px;
+                width: 300px;
+            }
+
+            .lieferando{
+                height: 200px;
+                width: 300px;
+            }
+
+            .pokedex{
                 height: 200px;
                 width: 300px;
             }
@@ -117,37 +285,54 @@
 }
 
 @media (max-width: 750px) {
-    .container-my-work{
-
-        h2{
+    .container-my-work {
+        h2 {
             margin-bottom: 60px;
         }
-        .selection-switches{
+        .selection-switches {
             flex-direction: column;
             margin-bottom: 40px;
 
-            .selection{
+            .selection {
                 margin-bottom: 20px;
             }
         }
 
-        .container-picture{
+        .container-picture {
             flex-direction: column;
         }
-    }   
+    }
 }
 
-@media(max-width: 350px){
-    .container-my-work{
-        
-        .container-picture{
-            
-            img{
+@media (max-width: 350px) {
+    .container-my-work {
+        .container-picture {
+            img {
                 height: 100px;
                 width: 200px;
             }
 
-            .el-pollo-loco{
+            .el-pollo-loco {
+                height: 100px;
+                width: 200px;
+            }
+
+            .angularSite{
+                height: 100px;
+                width: 200px;
+            }
+
+            .join{
+                height: 100px;
+                width: 200px;
+            }
+
+            .lieferando{
+                height: 100px;
+                width: 200px;
+            }
+
+            .pokedex{
                 height: 100px;
                 width: 200px;
             }

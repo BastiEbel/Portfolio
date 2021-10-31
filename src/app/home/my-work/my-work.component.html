@@ -1,18 +1,29 @@
 <div id="myWork" class="container-my-work">
     <h2>My Work</h2>
     <div class="selection-switches">
-        <div class="selection">All</div>
-        <div class="selection">Angular</div>
-        <div class="selection">JavaScript</div>
+        <div id="all" (click)="btnAll()" class="isSelected selection">All</div>
+        <div id="angular" (click)="btnAngular()" class="selection">Angular</div>
+        <div id="javaScript" (click)="btnJavaScript()" class="selection">JavaScript</div>
     </div>
-    <div class="container-picture">
-        <img src="assets/img/pexels-andrea-piacquadio-840996.jpg">
-        <img src="assets/img/pexels-danny-meneses-943096.jpg">
+    <div id="containerJS" class="container-picture">
+        <div class="join">
+            <a href="http://gruppe-97.developerakademie.com/index.html">Try out</a>
+        </div>
+        <div class="pokedex">
+            <a href="http://sebastian-ebel.developerakademie.com/pokodex/index.html">Try out</a>
+        </div>
     </div>
-    <div class="container-picture">
+    <div id="containerJavaScript" class="container-picture">
+        <div class="lieferando">
+            <a href="http://sebastian-ebel.developerakademie.com/Lieferando/index.html">Try out</a>
+        </div>
         <div class="el-pollo-loco">
             <a href="http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html">Try out</a>
         </div>
-        <img src="assets/img/pexels-karsten-madsen-18105.jpg">
+    </div>
+    <div id="containerAngular" class="container-picture">
+        <div class="angularSite">
+            <a href="#">This Site is write with Angular</a>
+        </div>
     </div>
 </div>

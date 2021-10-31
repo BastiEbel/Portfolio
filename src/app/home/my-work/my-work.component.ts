@@ -7,9 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  btnAll(){
+    document.getElementById('all')?.classList.add('isSelected');
+    document.getElementById('containerJS')?.classList.remove('d-none');
+    document.getElementById('containerJavaScript')?.classList.remove('d-none');
+    document.getElementById('containerAngular')?.classList.remove('d-none');
+    document.getElementById('containerJS')?.classList.add('container-picture');
+    document.getElementById('containerJavaScript')?.classList.add('container-picture');
+    document.getElementById('containerAngular')?.classList.add('container-picture');
+    document.getElementById('angular')?.classList.remove('isSelected');
+    document.getElementById('javaScript')?.classList.remove('isSelected');
+  }
+
+  btnAngular(){
+    document.getElementById('angular')?.classList.add('isSelected');
+    document.getElementById('containerJS')?.classList.add('d-none');
+    document.getElementById('containerJavaScript')?.classList.add('d-none');
+    document.getElementById('containerAngular')?.classList.remove('d-none');
+    document.getElementById('containerJS')?.classList.remove('container-picture');
+    document.getElementById('containerJavaScript')?.classList.remove('container-picture');
+    document.getElementById('containerAngular')?.classList.add('container-picture');
+    document.getElementById('all')?.classList.remove('isSelected');
+    document.getElementById('javaScript')?.classList.remove('isSelected');
+  }
+
+  btnJavaScript(){
+    document.getElementById('all')?.classList.remove('isSelected');
+    document.getElementById('containerJS')?.classList.remove('d-none');
+    document.getElementById('containerJavaScript')?.classList.remove('d-none');
+    document.getElementById('containerAngular')?.classList.add('d-none');
+    document.getElementById('containerJS')?.classList.add('container-picture');
+    document.getElementById('containerJavaScript')?.classList.add('container-picture');
+    document.getElementById('containerAngular')?.classList.remove('container-picture');
+    document.getElementById('angular')?.classList.remove('isSelected');
+    document.getElementById('javaScript')?.classList.add('isSelected');
+  }
 }
