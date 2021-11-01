@@ -3,16 +3,17 @@
         <h1>Contact me.</h1>
         <span>Get in touch via the form below, or by emailing
             <span class="email-contact">sebastianebel@hotmail.de</span></span>
-        <form action="mailto:sebastianebel@hotmail.de" onsubmit="formContact()">
+        <form action="http://sebastianebel-developer.de/send_mail.php" method="post">
             <span>Name<span class="must-have">*</span></span>
-            <input type="text" placeholder="Enter your name" required>
+            <input name="name" type="text" placeholder="Enter your name" required>
             <span>Email address<span class="must-have">*</span></span>
-            <input type="email" placeholder="Enter your Email address" required>
+            <input name="email" type="email" placeholder="Enter your Email address" required>
             <span>Message<span class="must-have">*</span></span>
-            <textarea placeholder="Enter your message" required></textarea>
-            <div class="send-button">
-                <a type="submit" onclick="this.closest('form').submit();return false;">Send</a>
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+            <div (click)="myContact()" class="send-button">
+                <a type="submit">Send</a>
             </div>
+            <span id="messageSend" class="d-none">Ihre Message wurde gesendet!</span>
         </form>
     </div>
 </div>

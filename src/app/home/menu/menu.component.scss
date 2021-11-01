@@ -10,6 +10,10 @@ header{
 
     img{
         height: 50px;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     a{

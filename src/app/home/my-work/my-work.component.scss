@@ -6,7 +6,7 @@
     padding-bottom: 80px;
 
     h2 {
-        font-size: 36px;
+        font-size: 48px;
         color: white;
         margin-bottom: 80px;
         margin-top: 80px;
@@ -59,11 +59,11 @@
         .el-pollo-loco {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 250px;
+            align-items: flex-end;
+            height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/el-pollo-loco.png");
+            background-image: url("/assets/img/el-pollo-loco.jpg");
             background-size: 100%;
             background-position: center;
 
@@ -74,6 +74,7 @@
                 background-color: rgba(255, 255, 255, 0.699);
                 width: 180px;
                 height: 60px;
+                margin-bottom: 12%;
                 border: 3px solid #fa2759;
                 text-decoration: none;
                 color: #fa2759;
@@ -89,11 +90,11 @@
         .lieferando{
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 250px;
+            align-items: flex-end;
+            height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url('/assets/img/lieferando.png');
+            background-image: url('/assets/img/lieferando.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -105,6 +106,7 @@
                 background-color: rgba(255, 255, 255, 0.699);
                 width: 180px;
                 height: 60px;
+                margin-bottom: 12%;
                 border: 3px solid #FA2759;
                 text-decoration: none;
                 color: #FA2759;
@@ -120,11 +122,11 @@
         .pokedex{
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 250px;
+            align-items: flex-end;
+            height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url('/assets/img/pokedex.png');
+            background-image: url('/assets/img/pokodex.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -136,6 +138,7 @@
                 background-color: rgba(255, 255, 255, 0.699);
                 width: 180px;
                 height: 60px;
+                margin-bottom: 12%;
                 border: 3px solid #FA2759;
                 text-decoration: none;
                 color: #FA2759;
@@ -151,11 +154,11 @@
         .join {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 250px;
+            align-items: flex-end;
+            height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/join-gruppenarbeit.png");
+            background-image: url("/assets/img/join-gruppenarbeit.jpg");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -167,6 +170,7 @@
                 background-color: rgba(255, 255, 255, 0.699);
                 width: 180px;
                 height: 60px;
+                margin-bottom: 12%;
                 border: 3px solid #fa2759;
                 text-decoration: none;
                 color: #fa2759;
@@ -182,20 +186,23 @@
         .angularSite {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 250px;
+            align-items: flex-end;
+            height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/angularSite.png");
+            background-image: url("/assets/img/angularSite.jpg");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
 
             a {
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: rgba(255, 255, 255, 0.699);
                 width: 180px;
                 height: 60px;
+                margin-bottom: 12%;
                 border: 3px solid #fa2759;
                 text-decoration: none;
                 color: #fa2759;
@@ -293,6 +300,7 @@
 
             .selection {
                 margin-bottom: 20px;
+                width: 300px;
             }
         }
 
