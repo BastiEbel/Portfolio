@@ -2,7 +2,7 @@
     <img *ngIf="!imprintMode" routerLink="/" src="assets/img/logo-white.png">
     <img *ngIf="imprintMode" routerLink="/" src="assets/img/logo-black.png">
 
-    <div class="mobile-modus" [class.darkLinks]="imprintMode">
+    <div class="mobile-modus container-link" [class.darkLinks]="imprintMode">
         <a routerLink="/">Home</a>
         <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
         <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
