@@ -6,7 +6,7 @@
     padding-top: 80px;
     height: 100%;
 
-    .container-info{
+    .container-info {
         margin-right: 80px;
     }
 
@@ -31,14 +31,14 @@
         object-fit: cover;
         margin-left: 80px;
     }
- 
-      .center {
+
+    .center {
         width: 180px;
         height: 60px;
         position: absolute;
-      }
-      
-      .btn {
+    }
+
+    .btn {
         width: 180px;
         height: 60px;
         cursor: pointer;
@@ -49,9 +49,9 @@
         border-radius: 4px;
         outline: none;
         transition: 500ms ease-in-out;
-      }
-      
-      svg {
+    }
+
+    svg {
         position: absolute;
         left: 0;
         top: 0;
@@ -60,23 +60,23 @@
         stroke-dasharray: 300 480;
         stroke-dashoffset: 300;
         transition: 500ms ease-in-out;
-      }
-      
-      .btn:hover {
+    }
+
+    .btn:hover {
         transition: 1s ease-in-out;
         background: #2dfcd960;
         color: white;
-      }
-      
-      .btn:hover svg {
+    }
+
+    .btn:hover svg {
         stroke-dashoffset: -480;
-      }
-      
-      .btn span {
+    }
+
+    .btn span {
         color: white;
         font-size: 18px;
         font-weight: 100;
-      }
+    }
 }
 
 .container-arrow {
@@ -219,7 +219,6 @@
         img {
             height: 350px;
             width: 350px;
-            margin-right: 80px;
         }
     }
 }
@@ -234,15 +233,12 @@
         img {
             height: 300px;
             width: 300px;
-            margin-right: 40px;
         }
     }
 }
 
 @media (max-width: 1000px) {
     .container-about-me {
-        padding-left: 40px;
-        padding-right: 40px;
         h1 {
             font-size: 44px;
         }
@@ -250,6 +246,26 @@
         img {
             height: 200px;
             width: 200px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .container-about-me{
+        .container-info{
+            margin-right: 40px;
+        }
+
+        img{
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .container-about-me{
+        .container-info{
+            margin-right: 0px;
         }
     }
 }
@@ -265,7 +281,7 @@
         }
 
         img {
-            margin-right: 0px;
+            margin-left: 0px;
         }
 
         .container-contactMe {
@@ -296,6 +312,12 @@
 
         .container-contactMe {
             margin-bottom: 10px;
+        }
+
+        .container-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
     }
 }

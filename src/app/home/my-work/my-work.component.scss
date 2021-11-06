@@ -530,14 +530,44 @@
             flex-direction: column;
             margin-bottom: 40px;
 
-            .selection {
+            .center {
                 margin-bottom: 20px;
-                width: 300px;
             }
         }
 
         .container-picture {
             flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .container-my-work{
+        .container-picture{
+            .el-pollo-loco{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .angularSite{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .join{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .lieferando{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .pokedex{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
         }
     }
 }
