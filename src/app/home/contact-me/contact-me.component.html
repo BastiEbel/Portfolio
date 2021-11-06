@@ -10,10 +10,15 @@
             <input name="email" type="email" placeholder="Enter your Email address" required>
             <span>Message<span class="must-have">*</span></span>
             <textarea name="message" placeholder="Enter your message" required></textarea>
-            <div class="send-button">
-                <button (click)="myContact()" type="submit">Send</button>
+            <div class="center">
+                <button type="submit" class="btn">
+                    <svg width="140px" height="40px" viewBox="0 0 140 40" class="border">
+                        <polyline points="139,1 139,39 1,39 1,1 139,1" class="bg-line" />
+                        <polyline points="139,1 139,39 1,39 1,1 139,1" class="hl-line" />
+                    </svg>
+                    Send
+                </button>
             </div>
-            <span id="messageSend" class="d-none">Ihre Message wurde gesendet!</span>
         </form>
     </div>
 </div>

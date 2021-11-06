@@ -11,9 +11,4 @@ export class ContactMeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  myContact(){
-    document.getElementById('messageSend')?.classList.add('contact-send');
-    document.getElementById('messageSend')?.classList.remove('d-none');
-  }
 }
