@@ -1,17 +1,16 @@
 <div class="container-about-me">
-    <div>
+    <div class="container-info">
         <h1>Hi,<br> I´m <span class="my-name">Sebastian</span> Ebel<br>
             Front End develop<span class="other-color">e</span>r</h1>
-            <div class="center">
-                <button (click)="toMyContact()" class="btn">
-                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                    </svg>
-                    Contact Me
-                </button>
-            </div>
-        
+        <div class="center">
+            <button (click)="toMyContact()" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                Contact Me
+            </button>
+        </div>
     </div>
     <div>
         <img src="assets/img/profil.jpg">
@@ -31,14 +30,12 @@
                 <clipPath id="cut-off-arrow">
                     <circle cx="306" cy="306" r="287" />
                 </clipPath>
-
                 <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
                     <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
                         result="goo" />
                     <feBlend in="SourceGraphic" in2="goo" />
                 </filter>
-
             </defs>
             <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
                       l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0

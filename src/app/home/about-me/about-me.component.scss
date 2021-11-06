@@ -1,12 +1,14 @@
 .container-about-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: black;
-    padding-left: 160px;
-    padding-right: 160px;
     padding-top: 80px;
     height: 100%;
+
+    .container-info{
+        margin-right: 80px;
+    }
 
     h1 {
         font-size: 64px;
@@ -27,6 +29,7 @@
         width: 500px;
         border-radius: 50%;
         object-fit: cover;
+        margin-left: 80px;
     }
  
       .center {
@@ -45,7 +48,7 @@
         font-size: 18px;
         border-radius: 4px;
         outline: none;
-        transition: 800ms ease-in-out;
+        transition: 500ms ease-in-out;
       }
       
       svg {
@@ -56,12 +59,12 @@
         stroke: #fff;
         stroke-dasharray: 150 480;
         stroke-dashoffset: 150;
-        transition: 800ms ease-in-out;
+        transition: 500ms ease-in-out;
       }
       
       .btn:hover {
         transition: 1s ease-in-out;
-        background: #2dfcd9ab;
+        background: #2dfcd960;
         color: white;
       }
       
