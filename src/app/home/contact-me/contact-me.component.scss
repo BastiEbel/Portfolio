@@ -1,3 +1,14 @@
+@keyframes slideRight{
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .container-contact {
     background-color: black;
     display: flex;
@@ -5,6 +16,7 @@
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    overflow: hidden;
 
     .contact {
         display: flex;
@@ -16,16 +28,22 @@
         margin-top: 0px;
         font-size: 64px;
         color: #2dfcd8;
+        animation: slideRight 500ms ease-in;
     }
 
     span {
         margin-bottom: 20px;
         font-size: 18px;
         color: white;
+        animation: slideRight 500ms ease-in;
 
         .email-contact {
             color: #2dfcd8;
         }
+    }
+
+    form{
+        animation: slideRight 1s ease-in-out;
     }
 
     .must-have {

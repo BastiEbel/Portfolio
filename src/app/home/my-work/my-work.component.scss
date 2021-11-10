@@ -4,12 +4,25 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 80px;
+    overflow: hidden;
 
     h2 {
         font-size: 48px;
         color: white;
         margin-bottom: 80px;
         margin-top: 80px;
+        animation: slideTop 1s ease-in;
+    }
+
+    @keyframes slideTop{
+        from {
+            transform: translateY(-500px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
 
     .selection-switches {
@@ -22,6 +35,29 @@
         .isSelected {
             background-color: #fa2759;
             color: white;
+        }
+
+        @keyframes slideRight{
+            from {
+                transform: translateX(500px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        .btn-all{
+            animation: slideRight 750ms ease-in;
+        }
+
+        .btn-angular{
+            animation: slideRight 1s ease-in;
+        }
+
+        .btn-javascript{
+            animation: slideRight 1.25s ease-in;
         }
 
         .center {
@@ -98,63 +134,80 @@
             background-image: url("/assets/img/el-pollo-loco.jpg");
             background-size: 100%;
             background-position: center;
+            animation: slideRight 2s ease-in;
 
             $speed: 0.5s;
-
-            .btn-flip {
-                opacity: 1;
-                outline: 0;
-                background-color: rgba(255, 255, 255, 0.699);
-                width: 180px;
-                height: 60px;
-                margin-bottom: 12%;
-                border: 3px solid #fa2759;
-                line-height: 60px;
-                position: relative;
-                text-align: center;
-                letter-spacing: 1px;
-                display: inline-block;
-                text-decoration: none;
-
-                &:hover {
-                    &:after {
-                        opacity: 1;
-                        transform: translateY(0) rotateX(0);
-                    }
-
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(50%) rotateX(90deg);
-                    }
-                }
-
-                &:after {
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
                     width: 100%;
-                    color: white;
-                    display: block;
-                    transition: $speed;
-                    position: absolute;
-                    background: #fa2759;
-                    content: attr(data-back);
-                    transform: translateY(-50%) rotateX(90deg);
-                }
-
-                &:before {
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                     color: #fa2759;
-                    display: block;
-                    padding: 0 30px;
-                    line-height: 60px;
-                    transition: $speed;
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.699);
-                    content: attr(data-front);
-                    transform: translateY(0) rotateX(0);
+                    
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
                 }
             }
         }
@@ -170,63 +223,78 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            animation: slideRight 1.5s ease-in;
 
             $speed: 0.5s;
-
-            .btn-flip {
-                opacity: 1;
-                outline: 0;
-                background-color: rgba(255, 255, 255, 0.699);
-                width: 180px;
-                height: 60px;
-                margin-bottom: 12%;
-                border: 3px solid #fa2759;
-                line-height: 60px;
-                position: relative;
-                text-align: center;
-                letter-spacing: 1px;
-                display: inline-block;
-                text-decoration: none;
-
-                &:hover {
-                    &:after {
-                        opacity: 1;
-                        transform: translateY(0) rotateX(0);
-                    }
-
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(50%) rotateX(90deg);
-                    }
-                }
-
-                &:after {
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
                     width: 100%;
-                    color: white;
-                    display: block;
-                    transition: $speed;
-                    position: absolute;
-                    background: #fa2759;
-                    content: attr(data-back);
-                    transform: translateY(-50%) rotateX(90deg);
-                }
-
-                &:before {
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                     color: #fa2759;
-                    display: block;
-                    padding: 0 30px;
-                    line-height: 60px;
-                    transition: $speed;
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.699);
-                    content: attr(data-front);
-                    transform: translateY(0) rotateX(0);
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
                 }
             }
         }
@@ -242,63 +310,79 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            animation: slideRight 1s ease-in;
 
             $speed: 0.5s;
-
-            .btn-flip {
-                opacity: 1;
-                outline: 0;
-                background-color: rgba(255, 255, 255, 0.699);
-                width: 180px;
-                height: 60px;
-                margin-bottom: 12%;
-                border: 3px solid #fa2759;
-                line-height: 60px;
-                position: relative;
-                text-align: center;
-                letter-spacing: 1px;
-                display: inline-block;
-                text-decoration: none;
-
-                &:hover {
-                    &:after {
-                        opacity: 1;
-                        transform: translateY(0) rotateX(0);
-                    }
-
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(50%) rotateX(90deg);
-                    }
-                }
-
-                &:after {
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
                     width: 100%;
-                    color: white;
-                    display: block;
-                    transition: $speed;
-                    position: absolute;
-                    background: #fa2759;
-                    content: attr(data-back);
-                    transform: translateY(-50%) rotateX(90deg);
-                }
-
-                &:before {
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
                     color: #fa2759;
-                    display: block;
-                    padding: 0 30px;
-                    line-height: 60px;
-                    transition: $speed;
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.699);
-                    content: attr(data-front);
-                    transform: translateY(0) rotateX(0);
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
                 }
             }
         }
@@ -314,63 +398,79 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            animation: slideRight 500ms ease-in;
 
             $speed: 0.5s;
-
-            .btn-flip {
-                opacity: 1;
-                outline: 0;
-                background-color: rgba(255, 255, 255, 0.699);
-                width: 180px;
-                height: 60px;
-                margin-bottom: 12%;
-                border: 3px solid #fa2759;
-                line-height: 60px;
-                position: relative;
-                text-align: center;
-                letter-spacing: 1px;
-                display: inline-block;
-                text-decoration: none;
-
-                &:hover {
-                    &:after {
-                        opacity: 1;
-                        transform: translateY(0) rotateX(0);
-                    }
-
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(50%) rotateX(90deg);
-                    }
-                }
-
-                &:after {
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
                     width: 100%;
-                    color: white;
-                    display: block;
-                    transition: $speed;
-                    position: absolute;
-                    background: #fa2759;
-                    content: attr(data-back);
-                    transform: translateY(-50%) rotateX(90deg);
-                }
-
-                &:before {
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                     color: #fa2759;
-                    display: block;
-                    padding: 0 30px;
-                    line-height: 60px;
-                    transition: $speed;
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.699);
-                    content: attr(data-front);
-                    transform: translateY(0) rotateX(0);
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
                 }
             }
         }
@@ -386,63 +486,79 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            animation: slideRight 2.5s ease-in;
 
             $speed: 0.5s;
-
-            .btn-flip {
-                opacity: 1;
-                outline: 0;
-                background-color: rgba(255, 255, 255, 0.699);
-                width: 180px;
-                height: 60px;
-                margin-bottom: 12%;
-                border: 3px solid #fa2759;
-                line-height: 60px;
-                position: relative;
-                text-align: center;
-                letter-spacing: 1px;
-                display: inline-block;
-                text-decoration: none;
-
-                &:hover {
-                    &:after {
-                        opacity: 1;
-                        transform: translateY(0) rotateX(0);
-                    }
-
-                    &:before {
-                        opacity: 0;
-                        transform: translateY(50%) rotateX(90deg);
-                    }
-                }
-
-                &:after {
-                    top: 0;
-                    left: 0;
-                    opacity: 0;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
                     width: 100%;
-                    color: white;
-                    display: block;
-                    transition: $speed;
-                    position: absolute;
-                    background: #fa2759;
-                    content: attr(data-back);
-                    transform: translateY(-50%) rotateX(90deg);
-                }
-
-                &:before {
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
                     color: #fa2759;
-                    display: block;
-                    padding: 0 30px;
-                    line-height: 60px;
-                    transition: $speed;
-                    position: relative;
-                    background: rgba(255, 255, 255, 0.699);
-                    content: attr(data-front);
-                    transform: translateY(0) rotateX(0);
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
                 }
             }
         }
@@ -542,29 +658,29 @@
 }
 
 @media (max-width: 380px) {
-    .container-my-work{
-        .container-picture{
-            .el-pollo-loco{
+    .container-my-work {
+        .container-picture {
+            .el-pollo-loco {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .angularSite{
+            .angularSite {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .join{
+            .join {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .lieferando{
+            .lieferando {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .pokedex{
+            .pokedex {
                 margin-left: 0px;
                 margin-right: 0px;
             }

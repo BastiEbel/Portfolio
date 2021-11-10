@@ -1,6 +1,7 @@
 .container{
     background-color: #1a1a1a;
     padding-bottom: 80px;
+    overflow: hidden;
 }
 .container-explain{
     display: flex;
@@ -22,6 +23,7 @@
             margin-right: 80px;
             margin-bottom: 80px;
             object-fit: cover;
+            animation: slideRight 500ms ease-in;
         }
 
         .short-explain{
@@ -29,11 +31,23 @@
             color: white;
             margin-left: 80px;
             margin-bottom: 100px;
+            animation: slideRight 1s ease-in;
         }
 
         h2{
             font-size: 36px;
         }
+    }
+}
+
+@keyframes slideRight{
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 
@@ -45,9 +59,25 @@
     padding-left: 10%;
     padding-right: 10%;
 
+    
+    .began{
+        animation: rightSlider 500ms ease-in;
+    }
+
+    .fell{
+        animation: rightSlider 1s ease-in;
+    }
+
+    .searched{
+        animation: rightSlider 1500ms ease-in;
+    }
+
+    .challenge{
+        animation: rightSlider 2000ms ease-in;
+    }
+
     .my-journey{
         font-size: 18px;
-        /* height: 350px; */
         color: white;
         width: 20%;
         display: flex;
@@ -74,6 +104,17 @@
             width: 40px;
             height: 40px;
         }
+    }
+}
+
+@keyframes rightSlider {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 

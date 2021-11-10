@@ -1,7 +1,7 @@
 <div id="myWork" class="container-my-work">
     <h2>My Work</h2>
     <div class="selection-switches">
-        <div (click)="btnAll()" id="all" class="center">
+        <div (click)="btnAll()" id="all" class="center btn-all">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -10,7 +10,7 @@
                 All
             </button>
         </div>
-        <div (click)="btnAngular()" id="angular" class="center">
+        <div (click)="btnAngular()" id="angular" class="center btn-angular">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -19,7 +19,7 @@
                 Angular
             </button>
         </div>
-        <div (click)="btnJavaScript()" id="javaScript" class="center">
+        <div (click)="btnJavaScript()" id="javaScript" class="center btn-javascript">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -31,23 +31,42 @@
     </div>
     <div id="containerJS" class="container-picture">
         <div class="join">
-            <a href="http://gruppe-97.developerakademie.com/index.html" class="btn-flip" data-back="Join" data-front="Try it out"></a>
+            <div class="container-Link">
+                Join is an app to coordinate work
+                <a href="http://gruppe-97.developerakademie.com/index.html" class="btn-flip" data-back="Join"
+                    data-front="Try it out"></a>
+            </div>
         </div>
         <div class="pokedex">
-            <a href="http://sebastian-ebel.developerakademie.com/pokodex/index.html" class="btn-flip" data-back="PokeDex" data-front="Try it out"></a>
+            <div class="container-Link">
+                This is a collection of pokemons<br> and their skills 
+                <a href="http://sebastian-ebel.developerakademie.com/pokodex/index.html" class="btn-flip"
+                    data-back="PokeDex" data-front="Try it out"></a>
+            </div>
         </div>
     </div>
     <div id="containerJavaScript" class="container-picture">
         <div class="lieferando">
-            <a href="http://sebastian-ebel.developerakademie.com/Lieferando/index.html" class="btn-flip" data-back="Restaurant Site" data-front="Try it out"></a>
+            <div class="container-Link">
+                It is a Restaurant site
+                <a href="http://sebastian-ebel.developerakademie.com/Lieferando/index.html" class="btn-flip"
+                    data-back="Restaurant Site" data-front="Try it out"></a>
+            </div>
         </div>
         <div class="el-pollo-loco">
-            <a href="http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html" class="btn-flip" data-back="El-Pollo-Loco" data-front="Try it out"></a>
+            <div class="container-Link">
+                It is a jump and run game
+                <a href="http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html" class="btn-flip"
+                    data-back="El-Pollo-Loco" data-front="Try it out"></a>
+            </div>
         </div>
     </div>
     <div id="containerAngular" class="container-picture">
         <div class="angularSite">
-            <a href="#" class="btn-flip" data-back="This Site" data-front="Try it out"></a>
+            <div class="container-Link">
+                This site is written with Angular
+                <a href="#" class="btn-flip" data-back="This Site" data-front="Try it out"></a>
+            </div>
         </div>
     </div>
 </div>

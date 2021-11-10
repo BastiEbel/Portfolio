@@ -1,3 +1,30 @@
+.container {
+    background-color: black;
+    overflow: hidden;
+}
+
+@keyframes animationRight {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animationLeft {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 .container-about-me {
     display: flex;
     justify-content: center;
@@ -7,7 +34,9 @@
     height: 100%;
 
     .container-info {
+        display: block;
         margin-right: 80px;
+        animation: animationLeft 1s ease-in;
     }
 
     h1 {
@@ -29,7 +58,9 @@
         width: 500px;
         border-radius: 50%;
         object-fit: cover;
+        margin-top: 40px;
         margin-left: 80px;
+        animation: animationRight 1s ease-in;
     }
 
     .center {
@@ -251,20 +282,20 @@
 }
 
 @media (max-width: 950px) {
-    .container-about-me{
-        .container-info{
+    .container-about-me {
+        .container-info {
             margin-right: 40px;
         }
 
-        img{
+        img {
             margin-left: 40px;
         }
     }
 }
 
 @media (max-width: 860px) {
-    .container-about-me{
-        .container-info{
+    .container-about-me {
+        .container-info {
             margin-right: 0px;
         }
     }
@@ -314,7 +345,7 @@
             margin-bottom: 10px;
         }
 
-        .container-btn{
+        .container-btn {
             width: 100%;
             display: flex;
             justify-content: center;

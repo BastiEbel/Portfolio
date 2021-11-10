@@ -1,23 +1,54 @@
-.container-my-skills{
+.container-my-skills {
+    height: 100vh;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 
-    h2{
-        margin-top: 50px;
+    h2 {
+        margin-top: 150px;
         margin-bottom: 120px;
         font-size: 48px;
         color: white;
+        animation: animationWords 1s ease-in;
     }
 }
 
-.container-skills{
+@keyframes animationWords {
+    from {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes containerRight {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.container2 {
+    animation: containerRight 1.5s ease-in;
+}
+
+.container-skills {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .my-skills{
+    .my-skills {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -32,7 +63,7 @@
         text-align: center;
     }
 
-    .icon-img{
+    .icon-img {
         margin-top: -40px;
         margin-bottom: 20px;
         z-index: 1;
@@ -43,9 +74,9 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.15);
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15);
 
-        img{
+        img {
             height: 50px;
             width: 50px;
         }
@@ -53,20 +84,19 @@
 }
 
 @media (max-width: 1000px) {
-    .container-skills{
-
-        .my-skills{
+    .container-skills {
+        .my-skills {
             height: 100px;
             width: 200px;
         }
 
-        .icon-img{
+        .icon-img {
             margin-bottom: 15px;
             width: 60px;
             height: 60px;
         }
 
-        img{
+        img {
             height: 30px;
             width: 30px;
         }
@@ -74,15 +104,15 @@
 }
 
 @media (max-width: 750px) {
-    .container-skills{
+    .container-skills {
         flex-direction: column;
 
-        .my-skills{
+        .my-skills {
             width: 250px;
             height: 150px;
         }
 
-        .icon-img{
+        .icon-img {
             width: 80px;
             height: 80px;
             margin-bottom: 20px;
@@ -91,9 +121,8 @@
 }
 
 @media (max-width: 310px) {
-    .container-skills{
-
-        .my-skills{
+    .container-skills {
+        .my-skills {
             width: 200px;
             height: 100px;
         }
