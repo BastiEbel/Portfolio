@@ -1,6 +1,6 @@
-<div id="myskills" class="container-my-skills">
-    <h2>My Skills</h2>
-    <div class="container-skills container2">
+<section id="myskills" class="container-my-skills">
+    <h2 [class.h2Scroll]="scrolling">My Skills</h2>
+    <div [class.container2]="scrolling" class="container-skills1">
         <div class="my-skills">
             <div class="icon-img">
                 <img src="assets/img/java script.png">
@@ -20,7 +20,7 @@
             HTML/CSS
         </div>
     </div>
-    <div class="container-skills container2">
+    <div [class.container1]="scrolling" class="container-skills2">
         <div class="my-skills">
             <div class="icon-img">
                 <img src="assets/img/Group 226.png">
@@ -40,4 +40,4 @@
             Rest API
         </div>
     </div>
-</div>
+</section>
