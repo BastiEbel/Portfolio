@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-work',
@@ -7,8 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
+  scroll: boolean;
+  constructor() {
+      this.scroll = false;
+    }
 
-  constructor() { }
+  @HostListener('window:scroll', ['$event']) onScrollEvent(event: Event): void{
+
+    if(window.pageYOffset > 1050) {
+      this.scroll = true;
+    } else{
+      this.scroll = false;
+    }
+    
+ }
 
   ngOnInit(): void {
   }

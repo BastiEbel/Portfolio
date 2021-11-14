@@ -11,6 +11,10 @@
         color: white;
         margin-bottom: 80px;
         margin-top: 80px;
+    }
+
+    .h2Scroll{
+        
         animation: slideTop 1s ease-in;
     }
 
@@ -49,15 +53,18 @@
         }
 
         .btn-all{
-            animation: slideRight 750ms ease-in;
-        }
-
-        .btn-angular{
+            animation-delay: 3s;
             animation: slideRight 1s ease-in;
         }
 
+        .btn-angular{
+            animation-delay: 3s;
+            animation: slideRight 1.5s ease-in;
+        }
+
         .btn-javascript{
-            animation: slideRight 1.25s ease-in;
+            animation-delay: 3s;
+            animation: slideRight 2s ease-in;
         }
 
         .center {
@@ -134,7 +141,7 @@
             background-image: url("/assets/img/el-pollo-loco.jpg");
             background-size: 100%;
             background-position: center;
-            animation: slideRight 2s ease-in;
+            animation: slideRight 4s ease-in;
 
             $speed: 0.5s;
             &:hover {
@@ -166,6 +173,7 @@
                         display: inline-block;
                         text-decoration: none;
                         box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        font-size: 18px;
 
                         &:hover {
                             &:after {
@@ -223,7 +231,7 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 1.5s ease-in;
+            animation: slideRight 3.5s ease-in;
 
             $speed: 0.5s;
             &:hover {
@@ -239,6 +247,7 @@
                     justify-content: center;
                     flex-direction: column;
                     color: #fa2759;
+
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -254,6 +263,7 @@
                         display: inline-block;
                         text-decoration: none;
                         box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        font-size: 18px;
                         &:hover {
                             &:after {
                                 opacity: 1;
@@ -310,7 +320,7 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 1s ease-in;
+            animation: slideRight 3s ease-in-out;
 
             $speed: 0.5s;
             &:hover {
@@ -327,6 +337,7 @@
                     flex-direction: column;
                     text-align: center;
                     color: #fa2759;
+
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -342,6 +353,7 @@
                         display: inline-block;
                         text-decoration: none;
                         box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        font-size: 18px;
                         &:hover {
                             &:after {
                                 opacity: 1;
@@ -398,7 +410,7 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 500ms ease-in;
+            animation: slideRight 2.5s ease-in-out;
 
             $speed: 0.5s;
             &:hover {
@@ -429,6 +441,7 @@
                         display: inline-block;
                         text-decoration: none;
                         box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        font-size: 18px;
 
                         &:hover {
                             &:after {
@@ -486,7 +499,7 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 2.5s ease-in;
+            animation: slideRight 4.5s ease-in;
 
             $speed: 0.5s;
             &:hover {
@@ -517,6 +530,7 @@
                         display: inline-block;
                         text-decoration: none;
                         box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        font-size: 18px;
 
                         &:hover {
                             &:after {

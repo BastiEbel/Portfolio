@@ -15,8 +15,10 @@ export class MySkillsComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any){
    // console.log($event['Window']);
     
-    if(!this.scrolling) {
+    if(window.scrollY > 100) {
       this.scrolling = true;
+    } else {
+      this.scrolling = false;
     }
     
  }
