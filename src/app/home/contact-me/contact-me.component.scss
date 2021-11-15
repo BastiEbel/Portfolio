@@ -28,22 +28,29 @@
         margin-top: 0px;
         font-size: 64px;
         color: #2dfcd8;
-        animation: slideRight 500ms ease-in;
+    }
+
+    .h1Scroll{
+        animation: slideRight 2s ease-in;
     }
 
     span {
         margin-bottom: 20px;
         font-size: 18px;
         color: white;
-        animation: slideRight 500ms ease-in;
+        
 
         .email-contact {
             color: #2dfcd8;
         }
     }
 
-    form{
-        animation: slideRight 1s ease-in-out;
+    .spanScroll{
+        animation: slideRight 2.5s ease-in;
+    }
+
+    .formScroll{
+        animation: slideRight 4s ease-in-out;
     }
 
     .must-have {

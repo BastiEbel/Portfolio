@@ -14,10 +14,14 @@ export class MenuComponent implements OnInit {
   }
 
   toAboutMe(){
-    document.getElementById('aboutMe')?.scrollIntoView();
+    let el = document.getElementById('aboutMe');
+    let y = el?.getBoundingClientRect().bottom;
+    window.scrollTo({top: y, behavior: 'smooth'});
   }
 
   toMyWork(){
-    document.getElementById('myWork')?.scrollIntoView();
+   let el = document.getElementById('myWork');
+   let y = el?.getBoundingClientRect().top;
+    window.scrollTo({top: y, behavior: 'smooth'});
   }
 }

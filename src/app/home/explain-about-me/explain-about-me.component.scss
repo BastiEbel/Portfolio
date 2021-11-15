@@ -1,7 +1,9 @@
 .container{
     background-color: #1a1a1a;
     padding-bottom: 80px;
+    padding-top: 40px;
     overflow: hidden;
+    height: 90vh;
 }
 .container-explain{
     display: flex;
@@ -23,7 +25,9 @@
             margin-right: 80px;
             margin-bottom: 80px;
             object-fit: cover;
-            animation: slideRight 500ms ease-in;
+        }
+        .img-slide{
+            animation: slideRight 1.5s ease-in-out;
         }
 
         .short-explain{
@@ -31,7 +35,10 @@
             color: white;
             margin-left: 80px;
             margin-bottom: 100px;
-            animation: slideRight 1s ease-in;
+            
+        }
+        .short-slide{
+            animation: slideRight 2s ease-in-out;
         }
 
         h2{
@@ -61,19 +68,19 @@
 
     
     .began{
-        animation: rightSlider 500ms ease-in;
+        animation: slideRight 2.5s ease-in-out;
     }
 
     .fell{
-        animation: rightSlider 1s ease-in;
+        animation: slideRight 3s ease-in-out;
     }
 
     .searched{
-        animation: rightSlider 1500ms ease-in;
+        animation: slideRight 3.5s ease-in-out;
     }
 
     .challenge{
-        animation: rightSlider 2000ms ease-in;
+        animation: slideRight 4s ease-in-out;
     }
 
     .my-journey{
@@ -104,17 +111,6 @@
             width: 40px;
             height: 40px;
         }
-    }
-}
-
-@keyframes rightSlider {
-    from {
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0px);
-        opacity: 1;
     }
 }
 

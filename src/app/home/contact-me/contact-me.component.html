@@ -1,9 +1,9 @@
-<div id="contactMe" class="container-contact">
+<div (scroll)="onScrollEvent($event)" id="contactMe" class="container-contact">
     <div class="contact">
-        <h1>Contact me.</h1>
-        <span>Get in touch via the form below, or by emailing
+        <h1 [class.h1Scroll]="scroll">Contact me.</h1>
+        <span [class.spanScroll]="scroll">Get in touch via the form below, or by emailing
             <span class="email-contact">sebastianebel@hotmail.de</span></span>
-        <form action="/send_mail.php" method="POST">
+        <form [class.formScroll]="scroll" action="/send_mail.php" method="POST">
             <span>Name<span class="must-have">*</span></span>
             <input name="name" type="text" placeholder="Enter your name" required>
             <span>Email address<span class="must-have">*</span></span>

@@ -14,6 +14,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     DataProtectionComponent
   ],
   imports: [
+    NgxPageScrollCoreModule,
     BrowserModule,
     ScrollToModule.forRoot(),
     AppRoutingModule
