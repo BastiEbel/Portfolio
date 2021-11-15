@@ -3,7 +3,7 @@
     padding-bottom: 80px;
     padding-top: 40px;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
 }
 .container-explain{
     display: flex;
@@ -53,6 +53,7 @@
         opacity: 0;
     }
     to {
+        animation-delay: 2s;
         transform: translateX(0px);
         opacity: 1;
     }
@@ -62,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 80px;
+    margin-top: 100px;
     padding-left: 10%;
     padding-right: 10%;
 

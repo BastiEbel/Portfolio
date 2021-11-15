@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
   imports: [
     NgxPageScrollCoreModule,
     BrowserModule,
+    BrowserAnimationsModule,
     ScrollToModule.forRoot(),
     AppRoutingModule
   ],

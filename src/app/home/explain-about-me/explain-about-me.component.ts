@@ -1,4 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-explain-about-me',
@@ -8,19 +9,18 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class ExplainAboutMeComponent implements OnInit {
   
-  scroll: boolean;
-  constructor() {
-      this.scroll = false;
+  public scroll = false;
+  constructor(@Inject(DOCUMENT) private document: any) {
     }
 
-  @HostListener('window:scroll', ['$event']) onScrollEvent(event: Event): void{
-
-    if(window.pageYOffset > 2700) {
-      this.scroll = true;
-    } else{
-      this.scroll = false;
-    }
+  @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
+   let position = window.scrollY;
     
+    if(position > 2600) {
+      this.scroll = true;
+    } else {
+      this.scroll = false;
+    }
  }
 
   ngOnInit(): void {

@@ -20,6 +20,6 @@ export class AboutMeComponent implements OnInit {
   toMyContact(){
     let el = document.getElementById('contactMe');
     let y = el?.getBoundingClientRect().bottom;
-    window.scrollTo({top: y, behavior: 'smooth'})
+    window.scrollTo({top: y, behavior: 'smooth'}); 
   }
 }

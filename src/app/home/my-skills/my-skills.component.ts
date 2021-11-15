@@ -1,4 +1,5 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-skills',
@@ -7,20 +8,18 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class MySkillsComponent implements OnInit {
 
-  scrolling: boolean;
-  constructor() {
-      this.scrolling = false;
+  public scroll = false;
+  constructor(@Inject(DOCUMENT) private document: any) {
     }
 
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event: any){
-   // console.log($event['Window']);
+  @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
+   let position = window.scrollY;
     
-    if(window.scrollY > 100) {
-      this.scrolling = true;
+    if(position > 100) {
+      this.scroll = true;
     } else {
-      this.scrolling = false;
+      this.scroll = false;
     }
-    
  }
 
   ngOnInit(): void {

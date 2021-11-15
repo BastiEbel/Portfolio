@@ -4,6 +4,7 @@
         opacity: 0;
     }
     to {
+        animation-delay: 2s;
         transform: translateX(0px);
         opacity: 1;
     }
@@ -17,6 +18,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     overflow: hidden;
+    height: 100vh;
 
     .contact {
         display: flex;
@@ -31,7 +33,7 @@
     }
 
     .h1Scroll{
-        animation: slideRight 2s ease-in;
+        animation: slideRight 2s ease-in-out;
     }
 
     span {
@@ -46,7 +48,7 @@
     }
 
     .spanScroll{
-        animation: slideRight 2.5s ease-in;
+        animation: slideRight 2.5s ease-in-out;
     }
 
     .formScroll{
