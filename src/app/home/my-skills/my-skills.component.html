@@ -1,6 +1,6 @@
 <section (scroll)="onScrollEvent($event)" id="myskills" class="container-my-skills">
-    <h2 [class.h2Scroll]="scroll">My Skills</h2>
-    <div [class.container2]="scroll" class="container-skills1">
+    <h2 @myInsertTrigger *ngIf="isOpenH2">My Skills</h2>
+    <div @myTrigger *ngIf="isOpenDiv" id="containerSkill" class="container-skills1">
         <div class="my-skills">
             <div class="icon-img">
                 <img src="assets/img/java script.png">
@@ -20,7 +20,7 @@
             HTML/CSS
         </div>
     </div>
-    <div [class.container1]="scroll" class="container-skills2">
+    <div @myTrigger1 *ngIf="isOpenDiv1" id="containerSkills" class="container-skills2">
         <div class="my-skills">
             <div class="icon-img">
                 <img src="assets/img/Group 226.png">

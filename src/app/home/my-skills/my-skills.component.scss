@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-
+    height: 100vh;
    
 }
 
@@ -14,44 +14,6 @@ h2 {
     margin-bottom: 120px;
     font-size: 48px;
     color: white;
-}
-
-.h2Scroll{
-    animation-delay: 5s;
-    animation: animationWords 1s ease-in-out;
-}
-
-
-@keyframes animationWords {
-    from {
-        transform: translateY(-500px);
-        opacity: 0;
-    }
-    to {
-        animation-delay: 2s;
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes containerRight {
-    from {
-        transform: translateX(500px);
-        opacity: 0;
-    }
-    to {
-        animation-delay: 2s;
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-.container1 {
-    animation-delay: 5s;
-    animation: containerRight 2.5s ease-in;
-}
-.container2 {
-    animation-delay: 1.5s;
-    animation: containerRight 1.5s ease-in;
 }
 
 .container-skills1 {
