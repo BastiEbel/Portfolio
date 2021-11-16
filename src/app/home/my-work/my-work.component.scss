@@ -13,23 +13,6 @@
         margin-top: 80px;
     }
 
-    .h2Scroll{
-        
-        animation: slideTop 1s ease-in;
-    }
-
-    @keyframes slideTop{
-        from {
-            transform: translateY(-500px);
-            opacity: 0;
-        }
-        to {
-            animation-delay: 2s;
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
     .selection-switches {
         position: relative;
         display: flex;
@@ -40,33 +23,6 @@
         .isSelected {
             background-color: #fa2759;
             color: white;
-        }
-
-        @keyframes slideRight{
-            from {
-                transform: translateX(500px);
-                opacity: 0;
-            }
-            to {
-                animation-delay: 2s;
-                transform: translateX(0px);
-                opacity: 1;
-            }
-        }
-
-        .btn-all{
-            animation-delay: 3s;
-            animation: slideRight 1s ease-in;
-        }
-
-        .btn-angular{
-            animation-delay: 3s;
-            animation: slideRight 1.5s ease-in;
-        }
-
-        .btn-javascript{
-            animation-delay: 3s;
-            animation: slideRight 2s ease-in;
         }
 
         .center {
@@ -143,7 +99,6 @@
             background-image: url("/assets/img/el-pollo-loco.jpg");
             background-size: 100%;
             background-position: center;
-            animation: slideRight 4s ease-in;
 
             $speed: 0.5s;
             &:hover {
@@ -233,7 +188,6 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 3.5s ease-in;
 
             $speed: 0.5s;
             &:hover {
@@ -322,7 +276,6 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 3s ease-in-out;
 
             $speed: 0.5s;
             &:hover {
@@ -412,7 +365,6 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 2.5s ease-in-out;
 
             $speed: 0.5s;
             &:hover {
@@ -501,7 +453,6 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            animation: slideRight 4.5s ease-in;
 
             $speed: 0.5s;
             &:hover {

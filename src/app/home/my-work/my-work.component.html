@@ -1,7 +1,7 @@
 <div (scroll)="onScrollEvent($event)" id="myWork" class="container-my-work">
-    <h2 [class.h2Scroll]="scroll">My Work</h2>
+    <h2 @myWorkTrigger *ngIf="isOpen">My Work</h2>
     <div class="selection-switches">
-        <div [class.btn-all]="scroll" (click)="btnAll()" id="all" class="center">
+        <div @myBtnAllTrigger *ngIf="isOpen" (click)="btnAll()" id="all" class="center">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -10,7 +10,7 @@
                 All
             </button>
         </div>
-        <div [class.btn-angular]="scroll" (click)="btnAngular()" id="angular" class="center">
+        <div @myBtnAngularTrigger *ngIf="isOpen" (click)="btnAngular()" id="angular" class="center">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -19,7 +19,7 @@
                 Angular
             </button>
         </div>
-        <div [class.btn-javascript]="scroll" (click)="btnJavaScript()" id="javaScript" class="center">
+        <div @myBtnJsTrigger *ngIf="isOpen" (click)="btnJavaScript()" id="javaScript" class="center">
             <button class="btn">
                 <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                     <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
@@ -30,14 +30,14 @@
         </div>
     </div>
     <div id="containerJS" class="container-picture">
-        <div [class.join]="scroll">
+        <div @myJoinTrigger *ngIf="isOpen" class="join">
             <div class="container-Link">
                 Join is an app to coordinate work
                 <a href="http://gruppe-97.developerakademie.com/index.html" class="btn-flip" data-back="Join"
                     data-front="Try it out"></a>
             </div>
         </div>
-        <div [class.pokedex]="scroll">
+        <div @myPokedexTrigger *ngIf="isOpen" class="pokedex">
             <div class="container-Link">
                 This is a collection of pokemons<br> and their skills 
                 <a href="http://sebastian-ebel.developerakademie.com/pokodex/index.html" class="btn-flip"
@@ -46,14 +46,14 @@
         </div>
     </div>
     <div id="containerJavaScript" class="container-picture">
-        <div [class.lieferando]="scroll">
+        <div @myRestaurantTrigger *ngIf="isOpen" class="lieferando">
             <div class="container-Link">
                 It is a Restaurant site
                 <a href="http://sebastian-ebel.developerakademie.com/Lieferando/index.html" class="btn-flip"
                     data-back="Restaurant Site" data-front="Try it out"></a>
             </div>
         </div>
-        <div [class.el-pollo-loco]="scroll">
+        <div @myPepeTrigger *ngIf="isOpen" class="el-pollo-loco">
             <div class="container-Link">
                 It is a jump and run game
                 <a href="http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html" class="btn-flip"
@@ -62,7 +62,7 @@
         </div>
     </div>
     <div id="containerAngular" class="container-picture">
-        <div [class.angularSite]="scroll">
+        <div @mySiteTrigger *ngIf="isOpen" class="angularSite">
             <div class="container-Link">
                 This site is written with Angular
                 <a href="#" class="btn-flip" data-back="This Site" data-front="Try it out"></a>

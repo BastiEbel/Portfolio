@@ -52,7 +52,7 @@ export class MySkillsComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
 
-    let pos = (document.documentElement.scrollTop || document.body.scrollTop)
+    let pos = (document.documentElement.scrollTop || document.body.scrollTop);
     
     if(pos){
       this.isOpenH2 = true;
