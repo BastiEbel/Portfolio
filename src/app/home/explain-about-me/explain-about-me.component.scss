@@ -118,6 +118,12 @@
     }
 }
 
+@media (max-width: 850px) {
+    .container{
+        height: unset;
+    }
+}
+
 @media (max-width: 750px) {
     .container{
 
@@ -142,7 +148,7 @@
                 height: 300px;
 
                 .new-challenges{
-                    margin-top: 70px;
+                    margin-top: 50px;
                 }
 
                 .my-journey-pic{
@@ -165,6 +171,15 @@
             }
         }
     }
+
+    .container-my-journey{
+        margin-top: 50px;
+        .my-journey{
+            .new-challenges{
+                margin-top: 0px;
+            }
+        }
+    }
 }
 
 @media (max-width: 300px) {
@@ -175,7 +190,7 @@
     .container-my-journey{
 
         .my-journey{
-
+            font-size: 14px;
             .new-challenges{
                 margin-top: 40px;
             }

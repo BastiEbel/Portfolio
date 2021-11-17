@@ -94,6 +94,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            text-align: center;
             height: 350px;
             width: 500px;
             margin: 25px;
@@ -115,7 +116,7 @@
                     justify-content: center;
                     flex-direction: column;
                     color: #fa2759;
-                    
+
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -130,7 +131,7 @@
                         letter-spacing: 1px;
                         display: inline-block;
                         text-decoration: none;
-                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
 
                         &:hover {
@@ -182,6 +183,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            text-align: center;
             height: 350px;
             width: 500px;
             margin: 25px;
@@ -219,7 +221,7 @@
                         letter-spacing: 1px;
                         display: inline-block;
                         text-decoration: none;
-                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         &:hover {
                             &:after {
@@ -270,6 +272,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            text-align: center;
             height: 350px;
             width: 500px;
             margin: 25px;
@@ -308,7 +311,7 @@
                         letter-spacing: 1px;
                         display: inline-block;
                         text-decoration: none;
-                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         &:hover {
                             &:after {
@@ -359,6 +362,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            text-align: center;
             height: 350px;
             width: 500px;
             margin: 25px;
@@ -395,7 +399,7 @@
                         letter-spacing: 1px;
                         display: inline-block;
                         text-decoration: none;
-                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
 
                         &:hover {
@@ -447,6 +451,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            text-align: center;
             height: 350px;
             width: 500px;
             margin: 25px;
@@ -483,7 +488,7 @@
                         letter-spacing: 1px;
                         display: inline-block;
                         text-decoration: none;
-                        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
 
                         &:hover {
@@ -571,6 +576,8 @@
 
 @media (max-width: 1000px) {
     .container-my-work {
+        height: unset;
+
         .container-picture {
             img {
                 height: 200px;
@@ -580,26 +587,105 @@
             .el-pollo-loco {
                 height: 200px;
                 width: 300px;
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
             }
 
             .angularSite {
                 height: 200px;
                 width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
             }
 
             .join {
                 height: 200px;
                 width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
             }
 
             .lieferando {
                 height: 200px;
                 width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
             }
 
             .pokedex {
                 height: 200px;
                 width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -660,33 +746,73 @@
     .container-my-work {
         .container-picture {
             img {
-                height: 100px;
+                height: 150px;
                 width: 200px;
             }
 
             .el-pollo-loco {
-                height: 100px;
+                height: 150px;
                 width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
 
             .angularSite {
-                height: 100px;
+                height: 150px;
                 width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
 
             .join {
-                height: 100px;
+                height: 150px;
                 width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
 
             .lieferando {
-                height: 100px;
+                height: 150px;
                 width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
 
             .pokedex {
-                height: 100px;
+                height: 150px;
                 width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 12px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -43,7 +43,7 @@ export class MenuComponent implements OnInit {
 
   toAboutMe(){
     window.scroll({ 
-      top: 3450, 
+      top: 3650, 
       left: 0, 
       behavior: 'smooth',
     });
@@ -51,7 +51,7 @@ export class MenuComponent implements OnInit {
 
   toMyWork(){
     window.scroll({ 
-      top: 1850, 
+      top: 2010, 
       left: 0, 
       behavior: 'smooth',
     });

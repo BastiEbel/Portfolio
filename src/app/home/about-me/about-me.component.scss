@@ -279,6 +279,10 @@
             width: 200px;
         }
     }
+
+    .container-arrow {
+        padding-top: 80px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -395,9 +399,9 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
     .container-about-me {
-        height: 100%;
+        height: calc(100vh - 100px);
 
         h1 {
             font-size: 18px;
@@ -407,9 +411,39 @@
             margin-left: 20%;
         }
 
+        .center {
+            height: 40px;
+            width: 90px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 90px;
+            font-size: 12px;
+        }
+
+        svg{
+            height: 40px;
+            width: 90px;
+        }
+
         img {
             height: 100px;
             width: 100px;
+        }
+    }
+
+    .container-arrow {
+        $circle-w: 50px;
+
+        .ico {
+            height: $circle-w;
+            width: $circle-w;
+
+            .circle {
+                height: $circle-w;
+                width: $circle-w;
+            }
         }
     }
 }

@@ -156,7 +156,8 @@ header {
     }
     input[type="checkbox"]:checked ~ #sidebarMenu {
         transform: translateY(0);
-        top: 50px; /*change here related your top menu height*/
+        top: 80px; /*change here related your top menu height*/
+        right: 30px;
     }
     input[type="checkbox"] {
         transition: all 0.3s;
@@ -172,8 +173,8 @@ header {
         z-index: 99;
         height: 30px;
         width: 30px;
-        right: 10px;
-        top: 10px;
+        right: 30px;
+        top: 35px;
         /* display: none */
     }
     .spinner {
@@ -246,6 +247,15 @@ header {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1100px) {
+    header{
+        a{
+            width: unset;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
 
 @media (max-width: 900px) {
     header {
@@ -257,7 +267,7 @@ header {
         }
     }
 }
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
     header {
         .mobile-modus {
             display: none;
@@ -280,10 +290,10 @@ header {
 
 @media (max-width: 400px) {
     header {
+        padding-top: 10px;
         padding-left: 20px;
         padding-right: 0px;
         img {
-            margin-top: 10px;
             height: 50px;
         }
 
