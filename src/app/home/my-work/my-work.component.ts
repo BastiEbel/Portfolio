@@ -116,7 +116,9 @@ export class MyWorkComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
     if(pos > 1050){
-      this.isOpen = true;
+      setTimeout(() => {
+        this.isOpen = true;
+      }, 1500);
     } else {
       this.isOpen = false;
     }

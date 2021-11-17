@@ -1,8 +1,8 @@
 <div id="aboutMe" (scroll)="onScrollEvent($event)" class="container">
     <div class="container-explain">
-        <div class="explain-me">
-            <img [class.img-slide]="scroll" src="assets/img/profil.jpg">
-            <span [class.short-slide]="scroll" class="short-explain">
+        <div id="explainBorder" class="explain-me">
+            <img @myImgTrigger *ngIf="isOpen" src="assets/img/profil.jpg">
+            <span @myShortTrigger *ngIf="isOpen" class="short-explain">
                 <h2>About me.</h2>
                 "I´m someone who enjoys spending time with the family and<br>
                 front end developer who loves pushing boundaries."
@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="container-my-journey">
-        <div [class.began]="scroll" class="my-journey">
+        <div @myBeganTrigger *ngIf="isOpen" class="my-journey">
             <div class="my-journey-pic">
                 <img src="assets/img/walk-line.png">
             </div>
@@ -19,7 +19,7 @@
                 I am currently working as a fitter in trade fair construction. 
                 I started programming as a hobby.</span>
         </div>
-        <div [class.fell]="scroll" class="my-journey">
+        <div @myFellTrigger *ngIf="isOpen" class="my-journey">
             <div class="my-journey-pic">
                 <img src="assets/img/heart-line.png">
             </div>
@@ -27,7 +27,7 @@
             <span>I really enjoy developing software. 
                 For this reason I want to turn my hobby into my profession.</span>
         </div>
-        <div [class.searched]="scroll" class="my-journey">
+        <div @mySearchedTrigger *ngIf="isOpen" class="my-journey">
             <div class="my-journey-pic">
                 <img src="assets/img/search-line.png">
             </div>
@@ -35,7 +35,7 @@
             <span>I realized I wanted more. I wanted to turn my hobby into my job.
                 So I went looking and found the Developer Academy.</span>
         </div>
-        <div [class.challenge]="scroll" class="my-journey">
+        <div @myChallengeTrigger *ngIf="isOpen" class="my-journey">
             <div class="my-journey-pic new-challenges">
                 <img src="assets/img/flight-takeoff-line.png">
             </div>

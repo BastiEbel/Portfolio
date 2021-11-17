@@ -43,9 +43,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class MySkillsComponent implements OnInit {
 
-  isOpenH2 = false;
-  isOpenDiv = false;
-  isOpenDiv1 = false;
+  isOpen = false;;
 
   constructor() {
     }
@@ -55,13 +53,11 @@ export class MySkillsComponent implements OnInit {
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
     
     if(pos){
-      this.isOpenH2 = true;
-      this.isOpenDiv = true;
-      this.isOpenDiv1 = true;
+      setTimeout(() => {
+        this.isOpen = true;
+      }, 1500);
     } else {
-      this.isOpenH2 = false;
-      this.isOpenDiv = false;
-      this.isOpenDiv1 = false;
+      this.isOpen = false;
     }
  }
 

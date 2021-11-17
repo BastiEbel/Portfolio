@@ -16,7 +16,9 @@ export class ContactMeComponent implements OnInit {
    event = window.scrollY;
     
     if(event > 3700) {
-      this.scroll = true;
+      setTimeout(() => {
+        this.scroll = true;
+      }, 1500);
     } else {
       this.scroll = false;
     }
