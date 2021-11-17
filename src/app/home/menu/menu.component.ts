@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,22 +6,54 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  
+  isShow: boolean | undefined;
+  topPosToStartShowing = 100;
   @Input() imprintMode = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
+
+  @HostListener('window:scroll')
+  checkScroll() {
+
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+  
+  gotoTop() {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth',
+    });
+  }
+
+  tomyskill(){
+    document.getElementById('myskills')?.scrollIntoView();
+  }
+
   toAboutMe(){
-    let el = document.getElementById('aboutMe');
-    let y = el?.getBoundingClientRect().bottom;
-    window.scrollTo({top: y, behavior: 'smooth'});
+    window.scroll({ 
+      top: 3450, 
+      left: 0, 
+      behavior: 'smooth',
+    });
   }
 
   toMyWork(){
-   let el = document.getElementById('myWork');
-   let y = el?.getBoundingClientRect().top;
-    window.scrollTo({top: y, behavior: 'smooth'});
+    window.scroll({ 
+      top: 1850, 
+      left: 0, 
+      behavior: 'smooth',
+    });
   }
 }

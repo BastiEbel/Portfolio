@@ -52,10 +52,10 @@ export class MySkillsComponent implements OnInit {
 
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
     
-    if(pos){
+    if(pos > 50){
       setTimeout(() => {
         this.isOpen = true;
-      }, 1500);
+      }, 1000);
     } else {
       this.isOpen = false;
     }

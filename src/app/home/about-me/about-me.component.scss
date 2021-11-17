@@ -31,7 +31,7 @@
     align-items: center;
     background-color: black;
     padding-top: 80px;
-    height: 100%;
+    height: calc(75vh - 80px);
 
     .container-info {
         display: block;

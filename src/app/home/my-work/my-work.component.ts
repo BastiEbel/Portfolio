@@ -118,7 +118,7 @@ export class MyWorkComponent implements OnInit {
     if(pos > 1050){
       setTimeout(() => {
         this.isOpen = true;
-      }, 1500);
+      }, 1000);
     } else {
       this.isOpen = false;
     }

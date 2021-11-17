@@ -1,4 +1,4 @@
-<div (scroll)="onScrollEvent($event)" id="myWork" class="container-my-work">
+<div (scroll)="onScrollEvent($event)" class="container-my-work">
     <h2 @myWorkTrigger *ngIf="isOpen">My Work</h2>
     <div class="selection-switches">
         <div @myBtnAllTrigger *ngIf="isOpen" (click)="btnAll()" id="all" class="center">

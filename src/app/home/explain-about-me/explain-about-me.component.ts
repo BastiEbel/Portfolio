@@ -104,7 +104,7 @@ export class ExplainAboutMeComponent implements OnInit {
       setTimeout(() => {
         document.getElementById('explainBorder')?.classList.add('explain-border');
         this.isOpen = true;
-      }, 1500);
+      }, 1000);
     } else {
       this.isOpen = false;
       document.getElementById('explainBorder')?.classList.remove('explain-border');

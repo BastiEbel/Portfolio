@@ -52,7 +52,7 @@ export class ContactMeComponent implements OnInit {
     if(pos > 3800){
       setTimeout(() => {
         this.isOpen = true;
-      }, 1500);
+      }, 1000);
     } else {
       this.isOpen = false;
     }
