@@ -10,7 +10,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(500px)',
           opacity: 0
         }),
-        animate('1s ease-in-out', style({
+        animate('225ms ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -25,7 +25,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(1000px)',
           opacity: 0
         }),
-        animate('1s 1s ease-in-out', style({
+        animate('225ms 225ms ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -40,7 +40,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(1000px)',
           opacity: 0
         }),
-        animate('2s 1.5s ease-in-out', style({
+        animate('225ms 500ms ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -55,7 +55,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(1000px)',
           opacity: 0
         }),
-        animate('2s 2s ease-in-out', style({
+        animate('225ms 750ms ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -70,7 +70,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(1000px)',
           opacity: 0
         }),
-        animate('2s 2.5s ease-in-out', style({
+        animate('225ms 1s ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -82,7 +82,7 @@ import { Component, HostListener, Inject, OnInit } from '@angular/core';
           transform: 'translateX(1000px)',
           opacity: 0
         }),
-        animate('2s 3s ease-in-out', style({
+        animate('225ms 1.25s ease-in-out', style({
           transform: 'translateX(0px)',
           opacity: 1
         })),
@@ -100,11 +100,9 @@ export class ExplainAboutMeComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
-    if(pos > 2680){
-      setTimeout(() => {
-        document.getElementById('explainBorder')?.classList.add('explain-border');
-        this.isOpen = true;
-      }, 1000);
+    if(pos > 2900){
+      document.getElementById('explainBorder')?.classList.add('explain-border');
+      this.isOpen = true;
     } else {
       this.isOpen = false;
       document.getElementById('explainBorder')?.classList.remove('explain-border');

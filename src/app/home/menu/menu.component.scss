@@ -7,15 +7,13 @@ header {
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 80px;
-    padding-right: 80px;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 80px;
 
     img {
         height: 50px;
+        margin-right: 80px;
 
         &:hover {
             cursor: pointer;
@@ -23,6 +21,7 @@ header {
     }
 
     .container-link{
+        margin-left: 80px;
         height: 50px;
         display: flex;
         justify-content: space-between;
@@ -245,23 +244,31 @@ header {
     z-index: 1;
     background-color: white;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1350px) {
     header{
         a{
-            width: unset;
-            margin-left: 20px;
-            margin-right: 20px;
+            font-size: 16px;
+            width: 120px;
+        }
+        img{
+            margin-right: 40px;
+        }
+
+        .container-link{
+            margin-left: 0px;
         }
     }
 }
 
 @media (max-width: 900px) {
     header {
-        padding-left: 40px;
-        padding-right: 40px;
-
+        
         a {
             margin-left: 20px;
         }
@@ -269,6 +276,8 @@ header {
 }
 @media (max-width: 1000px) {
     header {
+        padding-left: 8%;
+
         .mobile-modus {
             display: none;
         }
@@ -279,6 +288,10 @@ header {
             height: 100%;
         }
     }
+
+    .headerWhite{
+        padding-left: 60px;
+    }
 }
 @media (max-width: 550px) {
     header {
@@ -286,11 +299,14 @@ header {
             width: 60%;
         }
     }
+
+    .headerWhite{
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 400px) {
     header {
-        padding-top: 10px;
         padding-left: 20px;
         padding-right: 0px;
         img {

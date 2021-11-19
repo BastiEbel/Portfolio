@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(500px)',
           opacity: 0}),
-          animate('1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -19,7 +19,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('1s 1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 225ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -30,7 +30,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('1s 1.5s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -41,7 +41,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('1s 2s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 750ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -52,7 +52,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 3s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 1s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -63,7 +63,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 3.5s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 1.225s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -74,7 +74,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 4s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 1.5s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -85,7 +85,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 4.5s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 1.75s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -96,7 +96,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 5s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 2s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -115,10 +115,8 @@ export class MyWorkComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
-    if(pos > 1050){
-      setTimeout(() => {
-        this.isOpen = true;
-      }, 1000);
+    if(pos > 1300){
+      this.isOpen = true;
     } else {
       this.isOpen = false;
     }

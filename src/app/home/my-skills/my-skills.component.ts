@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(500px)',
           opacity: 0}),
-          animate('1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -19,7 +19,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('1.5s 1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 225ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -30,7 +30,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('2s 2s ease-in-out', style({transform: 'translateX(0px)',
+          animate('225ms 500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -53,9 +53,7 @@ export class MySkillsComponent implements OnInit {
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
     
     if(pos > 50){
-      setTimeout(() => {
-        this.isOpen = true;
-      }, 1000);
+      this.isOpen = true;
     } else {
       this.isOpen = false;
     }

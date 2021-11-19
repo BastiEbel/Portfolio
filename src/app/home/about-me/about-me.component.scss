@@ -36,7 +36,7 @@
     .container-info {
         display: block;
         margin-right: 80px;
-        animation: animationLeft 1s ease-in;
+        animation: animationLeft 225ms ease-in-out;
     }
 
     h1 {
@@ -54,13 +54,13 @@
     }
 
     img {
-        height: 500px;
-        width: 500px;
+        height: 350px;
+        width: 350px;
         border-radius: 50%;
         object-fit: cover;
         margin-top: 40px;
         margin-left: 80px;
-        animation: animationRight 1s ease-in;
+        animation: animationRight 500ms ease-in-out;
     }
 
     .center {
@@ -245,38 +245,37 @@
     }
 }
 
-@media (max-width: 1480px) {
-    .container-about-me {
-        img {
-            height: 350px;
-            width: 350px;
-        }
-    }
-}
-
 @media (max-width: 1350px) {
     .container-about-me {
         padding-top: 20px;
 
+        .container-info{
+            margin-right: 50px;
+        }
+
         h1 {
             font-size: 48px;
         }
-        img {
-            height: 300px;
-            width: 300px;
+
+        img{
+            margin-left: 50px;
         }
     }
 }
 
 @media (max-width: 1000px) {
     .container-about-me {
+        .container-info{
+            margin-right: 40px;
+        }
         h1 {
             font-size: 44px;
         }
 
         img {
-            height: 200px;
-            width: 200px;
+            height: 300px;
+            width: 300px;
+            margin-left: 40px;
         }
     }
 
@@ -301,6 +300,15 @@
     .container-about-me {
         .container-info {
             margin-right: 0px;
+        }
+
+        h1{
+            font-size: 36px;
+        }
+
+        img{
+            height: 250px;
+            width: 250px;
         }
     }
 }
@@ -341,8 +349,8 @@
         }
 
         img {
-            height: 150px;
-            width: 150px;
+            height: 200px;
+            width: 200px;
         }
 
         .container-contactMe {
@@ -385,10 +393,13 @@
         }
         h1 {
             font-size: 24px;
+            margin-bottom: 80px;
+            margin-top: 0px;
         }
-        img {
-            height: 120px;
-            width: 120px;
+
+        img{
+            margin-top: 0px;
+            margin-bottom: 20px;
         }
     }
 
@@ -401,10 +412,11 @@
 
 @media (max-width: 380px) {
     .container-about-me {
-        height: calc(100vh - 100px);
+        height: calc(90vh - 100px);
 
         h1 {
             font-size: 18px;
+            margin-bottom: 40px;
         }
         .container-contactMe {
             width: 60%;
@@ -428,8 +440,8 @@
         }
 
         img {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
         }
     }
 
