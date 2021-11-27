@@ -91,6 +91,7 @@
         }
 
         .el-pollo-loco {
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -99,8 +100,9 @@
             width: 500px;
             margin: 25px;
             background-image: url("/assets/img/el-pollo-loco.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-position: center;
+            font-size: 0px;
 
             $speed: 0.5s;
             &:hover {
@@ -191,6 +193,8 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -277,9 +281,11 @@
             width: 500px;
             margin: 25px;
             background-image: url("/assets/img/pokodex.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -367,9 +373,11 @@
             width: 500px;
             margin: 25px;
             background-image: url("/assets/img/join-gruppenarbeit.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -456,9 +464,103 @@
             width: 500px;
             margin: 25px;
             background-image: url("/assets/img/angularSite.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+
+            $speed: 0.5s;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: #fa2759;
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
+                        font-size: 18px;
+
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
+                }
+            }
+        }
+
+        .ringOfFire{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            height: 350px;
+            width: 500px;
+            margin: 25px;
+            background-image: url("/assets/img/ringoffire.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: -125px;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -567,6 +669,11 @@
             }
 
             .pokedex {
+                height: 250px;
+                width: 400px;
+            }
+
+            .ringOfFire{
                 height: 250px;
                 width: 400px;
             }
@@ -687,6 +794,27 @@
                     }
                 }
             }
+
+            .ringOfFire{
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -735,6 +863,11 @@
             }
 
             .pokedex {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .ringOfFire{
                 margin-left: 0px;
                 margin-right: 0px;
             }
@@ -803,6 +936,19 @@
             }
 
             .pokedex {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 12px;
+                        .btn-flip{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            .ringOfFire{
                 height: 150px;
                 width: 200px;
                 &:hover {

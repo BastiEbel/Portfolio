@@ -103,6 +103,17 @@ import { Component, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
+    trigger('ringOfFireTrigger', [
+      transition(':enter', [
+        style({transform: 'translateX(1000px)',
+          opacity: 0}),
+          animate('225ms 2.25s ease-in-out', style({transform: 'translateX(0px)',
+            opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ]),
   ],
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
