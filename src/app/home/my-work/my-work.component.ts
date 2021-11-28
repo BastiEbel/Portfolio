@@ -85,7 +85,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 1.75s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1.75s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -96,7 +96,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 2s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 2s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -107,7 +107,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 2.25s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 2.25s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
