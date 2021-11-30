@@ -37,6 +37,17 @@ import { Component, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
+    trigger('myTrigger2', [
+      transition(':enter', [
+        style({transform: 'translateX(1000px)',
+          opacity: 0}),
+          animate('500ms 750ms ease-in-out', style({transform: 'translateX(0px)',
+            opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ]),
   ],
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss']

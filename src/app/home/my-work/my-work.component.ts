@@ -114,6 +114,28 @@ import { Component, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
+    trigger('mycsharpTrigger', [
+      transition(':enter', [
+        style({transform: 'translateX(1000px)',
+          opacity: 0}),
+          animate('500ms 2.5s ease-in-out', style({transform: 'translateX(0px)',
+            opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ]),
+    trigger('mycplusplusTrigger', [
+      transition(':enter', [
+        style({transform: 'translateX(1000px)',
+          opacity: 0}),
+          animate('500ms 2.75s ease-in-out', style({transform: 'translateX(0px)',
+            opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ]),
   ],
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
