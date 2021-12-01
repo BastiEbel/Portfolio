@@ -49,7 +49,7 @@ export class ContactMeComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
-    if(pos > 3700){
+    if(pos > 4300){
       this.isOpen = true;
     } else {
       this.isOpen = false;

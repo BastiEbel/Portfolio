@@ -100,7 +100,7 @@ export class ExplainAboutMeComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let pos = (document.documentElement.scrollTop || document.body.scrollTop);
-    if(pos > 2900){
+    if(pos > 3200){
       document.getElementById('explainBorder')?.classList.add('explain-border');
       this.isOpen = true;
     } else {
