@@ -1,4 +1,4 @@
-<section id="myskills" (scroll)="onScrollEvent($event)" class="container-my-skills">
+<section (scroll)="onScrollEvent($event)" class="container-my-skills">
     <h2 @myInsertTrigger *ngIf="isOpen">My Skills</h2>
     <div @myTrigger *ngIf="isOpen" class="container-skills">
         <div class="my-skills">
