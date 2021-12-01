@@ -1071,7 +1071,18 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
+    .container-my-work {
+        .selection-switches {
+            .center{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
     .container-my-work {
         h2 {
             margin-bottom: 60px;

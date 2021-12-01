@@ -48,6 +48,17 @@ import { Component, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
+    trigger('myBtnCTrigger', [
+      transition(':enter', [
+        style({transform: 'translateX(1000px)',
+          opacity: 0}),
+          animate('225ms 1s ease-in-out', style({transform: 'translateX(0px)',
+            opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ]),
     trigger('myJoinTrigger', [
       transition(':enter', [
         style({transform: 'translateX(1000px)',
@@ -163,23 +174,29 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('containerJS')?.classList.remove('d-none');
     document.getElementById('containerJavaScript')?.classList.remove('d-none');
     document.getElementById('containerAngular')?.classList.remove('d-none');
+    document.getElementById('containerC')?.classList.remove('d-none');
     document.getElementById('containerJS')?.classList.add('container-picture');
     document.getElementById('containerJavaScript')?.classList.add('container-picture');
     document.getElementById('containerAngular')?.classList.add('container-picture');
+    document.getElementById('containerC')?.classList.add('container-picture');
     document.getElementById('angular')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.remove('isSelected');
+    document.getElementById('cSharp')?.classList.remove('isSelected');
   }
 
   btnAngular(){
     document.getElementById('angular')?.classList.add('isSelected');
     document.getElementById('containerJS')?.classList.add('d-none');
     document.getElementById('containerJavaScript')?.classList.add('d-none');
+    document.getElementById('containerC')?.classList.add('d-none');
     document.getElementById('containerAngular')?.classList.remove('d-none');
     document.getElementById('containerJS')?.classList.remove('container-picture');
     document.getElementById('containerJavaScript')?.classList.remove('container-picture');
+    document.getElementById('containerC')?.classList.remove('container-picture');
     document.getElementById('containerAngular')?.classList.add('container-picture');
     document.getElementById('all')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.remove('isSelected');
+    document.getElementById('cSharp')?.classList.remove('isSelected');
   }
 
   btnJavaScript(){
@@ -187,10 +204,28 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('containerJS')?.classList.remove('d-none');
     document.getElementById('containerJavaScript')?.classList.remove('d-none');
     document.getElementById('containerAngular')?.classList.add('d-none');
+    document.getElementById('containerC')?.classList.add('d-none');
     document.getElementById('containerJS')?.classList.add('container-picture');
     document.getElementById('containerJavaScript')?.classList.add('container-picture');
     document.getElementById('containerAngular')?.classList.remove('container-picture');
+    document.getElementById('containerC')?.classList.remove('container-picture');
     document.getElementById('angular')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.add('isSelected');
+    document.getElementById('cSharp')?.classList.remove('isSelected');
+  }
+
+  btnC(){
+    document.getElementById('all')?.classList.remove('isSelected');
+    document.getElementById('containerJS')?.classList.add('d-none');
+    document.getElementById('containerJavaScript')?.classList.add('d-none');
+    document.getElementById('containerAngular')?.classList.add('d-none');
+    document.getElementById('containerC')?.classList.remove('d-none');
+    document.getElementById('containerJS')?.classList.remove('container-picture');
+    document.getElementById('containerJavaScript')?.classList.remove('container-picture');
+    document.getElementById('containerAngular')?.classList.remove('container-picture');
+    document.getElementById('containerC')?.classList.add('container-picture');
+    document.getElementById('angular')?.classList.remove('isSelected');
+    document.getElementById('javaScript')?.classList.remove('isSelected');
+    document.getElementById('cSharp')?.classList.add('isSelected');
   }
 }
