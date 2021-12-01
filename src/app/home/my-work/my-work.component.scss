@@ -91,7 +91,7 @@
         }
 
         .el-pollo-loco {
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -195,7 +195,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -287,7 +287,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -381,7 +381,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -473,7 +473,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -552,7 +552,7 @@
             }
         }
 
-        .ringOfFire{
+        .ringOfFire {
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -565,7 +565,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -645,7 +645,7 @@
             }
         }
 
-        .csharp{
+        .csharp {
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -658,7 +658,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -738,7 +738,7 @@
             }
         }
 
-        .cplusplus{
+        .cplusplus {
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -751,7 +751,7 @@
             background-repeat: no-repeat;
             background-position: center;
             font-size: 0px;
-            box-shadow: 5px 5px 21px -6px rgba(255,255,255,0.57);
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
             $speed: 0.5s;
             &:hover {
@@ -866,17 +866,22 @@
                 width: 400px;
             }
 
-            .ringOfFire{
+            .ringOfFire {
                 height: 250px;
                 width: 400px;
             }
 
-            .csharp{
+            .csharp {
                 height: 250px;
                 width: 400px;
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                    }
+                }
             }
 
-            .cplusplus{
+            .cplusplus {
                 height: 250px;
                 width: 400px;
             }
@@ -998,7 +1003,7 @@
                 }
             }
 
-            .ringOfFire{
+            .ringOfFire {
                 height: 200px;
                 width: 300px;
 
@@ -1010,6 +1015,50 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cplusplus {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 16px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+                            margin-top: 40px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .csharp {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 16px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+                            margin-top: 20px;
 
                             &:before {
                                 line-height: 40px;
@@ -1070,17 +1119,17 @@
                 margin-right: 0px;
             }
 
-            .ringOfFire{
+            .ringOfFire {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .cplusplus{
+            .cplusplus {
                 margin-left: 0px;
                 margin-right: 0px;
             }
 
-            .csharp{
+            .csharp {
                 margin-left: 0px;
                 margin-right: 0px;
             }
@@ -1102,8 +1151,9 @@
                 &:hover {
                     .container-Link {
                         font-size: 14px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
@@ -1115,8 +1165,9 @@
                 &:hover {
                     .container-Link {
                         font-size: 14px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
@@ -1128,8 +1179,9 @@
                 &:hover {
                     .container-Link {
                         font-size: 14px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
@@ -1141,8 +1193,9 @@
                 &:hover {
                     .container-Link {
                         font-size: 14px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
@@ -1154,47 +1207,52 @@
                 &:hover {
                     .container-Link {
                         font-size: 12px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
             }
 
-            .ringOfFire{
+            .ringOfFire {
                 height: 150px;
                 width: 200px;
                 &:hover {
                     .container-Link {
                         font-size: 12px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }
             }
 
-            .csharp{
+            .csharp {
                 height: 150px;
                 width: 200px;
                 &:hover {
                     .container-Link {
                         font-size: 12px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
                         }
                     }
                 }
             }
 
-            .cplusplus{
+            .cplusplus {
                 height: 150px;
                 width: 200px;
                 &:hover {
                     .container-Link {
                         font-size: 12px;
-                        .btn-flip{
+                        .btn-flip {
                             font-size: 10px;
+                            margin-top: 20px;
                         }
                     }
                 }

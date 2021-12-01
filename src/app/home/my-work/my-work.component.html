@@ -1,4 +1,4 @@
-<div (scroll)="onScrollEvent($event)" class="container-my-work">
+<div id="myWork" (scroll)="onScrollEvent($event)" class="container-my-work">
     <h2 @myWorkTrigger *ngIf="isOpen">My Work</h2>
     <div class="selection-switches">
         <div @myBtnAllTrigger *ngIf="isOpen" (click)="btnAll()" id="all" class="center">
@@ -78,17 +78,17 @@
     <div id="containerC" class="container-picture">
         <div @mycsharpTrigger *ngIf="isOpen" class="csharp">
             <div class="container-Link">
-                I started with a trade fair planner tool 2 weeks before I started at the Developer Academy. 
-                Unfortunately it's not finished yet. but was published on Github.
+                I started with a trade fair planner tool in C# 2 weeks before I started at the Developer Academy. 
+                Unfortunately it's not finished yet. It is published on Github.
                 <a href="https://github.com/BastiEbel/MessePlaner" class="btn-flip" data-back="Fair PLanner"
-                    data-front="You can look"></a>
+                    data-front="look at"></a>
             </div>
         </div>
         <div @mycplusplusTrigger *ngIf="isOpen" class="cplusplus">
             <div class="container-Link">
-                This program was written to Renè Böhme and me to collect chemistry formulas. 
+                This program was written in C++/CLI to Renè Böhme and me to collect chemistry formulas. 
                 <a href="https://www.rb-softarticle.com/list-of-synthesen-1-0" class="btn-flip"
-                    data-back="List of Synthese" data-front="You can look"></a>
+                    data-back="List of Synthese" data-front="look at"></a>
             </div>
         </div>
     </div>
