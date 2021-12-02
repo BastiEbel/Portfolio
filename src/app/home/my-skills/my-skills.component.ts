@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-my-skills',
@@ -56,14 +56,15 @@ export class MySkillsComponent implements OnInit {
 
   isOpen = false;;
 
-  constructor() {
+  constructor(private el: ElementRef) {
     }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
-
-    let pos = (document.documentElement.scrollTop || document.body.scrollTop);
+    let element = this.el.nativeElement.offsetTop - window.innerHeight;
+    let elHeight = this.el.nativeElement.clientHeight;
+    let pos = window.pageYOffset;
     
-    if(pos > 50){
+    if(pos >= element || elHeight){
       this.isOpen = true;
     } else {
       this.isOpen = false;

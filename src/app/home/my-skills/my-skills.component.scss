@@ -110,3 +110,9 @@ h2 {
         }
     }
 }
+
+@media (max-height: 768px) {
+    .container-my-skills{
+        height: 100%;
+    }
+}

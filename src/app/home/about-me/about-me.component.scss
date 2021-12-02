@@ -249,7 +249,7 @@
     .container-about-me {
         padding-top: 20px;
 
-        .container-info{
+        .container-info {
             margin-right: 50px;
         }
 
@@ -257,7 +257,7 @@
             font-size: 48px;
         }
 
-        img{
+        img {
             margin-left: 50px;
         }
     }
@@ -265,7 +265,7 @@
 
 @media (max-width: 1000px) {
     .container-about-me {
-        .container-info{
+        .container-info {
             margin-right: 40px;
         }
         h1 {
@@ -302,11 +302,11 @@
             margin-right: 0px;
         }
 
-        h1{
+        h1 {
             font-size: 36px;
         }
 
-        img{
+        img {
             height: 250px;
             width: 250px;
         }
@@ -365,26 +365,6 @@
     }
 }
 
-@media (max-height: 820px) {
-    .container-about-me {
-        height: 100%;
-
-        img {
-            height: 200px;
-            width: 200px;
-        }
-    }
-
-    .container-arrow {
-        img {
-            height: 50px;
-            width: 50px;
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-    }
-}
-
 @media (max-width: 420px) {
     .container-about-me {
         .container-contactMe {
@@ -397,7 +377,7 @@
             margin-top: 0px;
         }
 
-        img{
+        img {
             margin-top: 0px;
             margin-bottom: 20px;
         }
@@ -434,7 +414,7 @@
             font-size: 12px;
         }
 
-        svg{
+        svg {
             height: 40px;
             width: 90px;
         }
@@ -455,6 +435,29 @@
             .circle {
                 height: $circle-w;
                 width: $circle-w;
+            }
+        }
+    }
+}
+
+@media (max-height: 768px) {
+    .container {
+        .container-about-me {
+            height: 100%;
+            padding-top: 80px;
+            img {
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        .container-arrow {
+            padding-top: 150px;
+            img {
+                height: 50px;
+                width: 50px;
+                margin-top: 40px;
+                margin-bottom: 40px;
             }
         }
     }
