@@ -1,4 +1,6 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+
+import { Component, HostListener, Input, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-menu',
@@ -7,15 +9,15 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   
+
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
   @Input() imprintMode = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  
 
   @HostListener('window:scroll')
   checkScroll() {
@@ -28,6 +30,8 @@ export class MenuComponent implements OnInit {
       this.isShow = false;
     }
   }
+
+  
   
   gotoTop() {
     window.scroll({ 
@@ -42,11 +46,7 @@ export class MenuComponent implements OnInit {
   }
 
   toAboutMe(){
-    window.scrollTo({ 
-      top: 4200, 
-      left: 0, 
-      behavior: 'smooth',
-    });
+    document.getElementById('about-me')?.scrollIntoView();
   }
 
   toMyWork(){

@@ -319,3 +319,27 @@ header {
         }
     }
 }
+
+@media (max-height: 640px) {
+    header{
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: scale(0.8);
+        top: 60px;
+        right: 0px;
+        }
+    }
+}
+
+@media (max-height: 568px) {
+    header{
+        input[type="checkbox"]:checked ~ #sidebarMenu {
+        transform: scale(0.7);
+        top: 25px;
+        right: 0px;
+        }
+
+        .sidebarIconToggle{
+            top: 15px;
+        }
+    }
+}

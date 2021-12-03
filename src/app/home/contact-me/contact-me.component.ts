@@ -1,5 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
@@ -44,7 +45,7 @@ import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/co
 export class ContactMeComponent implements OnInit {
   
   isOpen = false;
-  constructor(private el: ElementRef) {
+  constructor(public el: ElementRef) {
     }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
@@ -60,4 +61,5 @@ export class ContactMeComponent implements OnInit {
  }
   ngOnInit(): void {
   }
+
 }
