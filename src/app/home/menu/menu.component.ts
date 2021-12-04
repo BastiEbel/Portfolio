@@ -42,11 +42,11 @@ export class MenuComponent implements OnInit {
   }
 
   tomyskill(){
-    document.getElementById('myskills')?.scrollIntoView();
+    document.getElementById('myskills')?.scrollIntoView({ behavior: 'smooth' });
   }
 
   toAboutMe(){
-    document.getElementById('about-me')?.scrollIntoView();
+    document.getElementById('about-me')?.scrollIntoView({ behavior: 'smooth' });
   }
 
   toMyWork(){

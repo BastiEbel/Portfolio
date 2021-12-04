@@ -14,10 +14,10 @@ export class AboutMeComponent implements OnInit {
   }
 
   tomyskill(){
-    document.getElementById('myskills')?.scrollIntoView();
+    document.getElementById('myskills')?.scrollIntoView({ behavior: 'smooth'});
   }
 
   toMyContact(){
-    document.getElementById('contactMe')?.scrollIntoView({block: 'end'});
+    document.getElementById('contactMe')?.scrollIntoView({block: 'end' });
   }
 }
