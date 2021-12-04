@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -18,8 +18,6 @@ export class AboutMeComponent implements OnInit {
   }
 
   toMyContact(){
-    let el = document.getElementById('contactMe');
-    let y = el?.getBoundingClientRect().bottom;
-    window.scrollTo({top: y, behavior: 'smooth'});
+    document.getElementById('contactMe')?.scrollIntoView({block: 'end'});
   }
 }
