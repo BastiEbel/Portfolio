@@ -1,5 +1,5 @@
 .container-footer{
-    height: 140px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,5 +56,12 @@
         a{
             margin-right: 10px;
         }
+    }
+}
+
+@media (max-height: 750px) {
+    .container-footer{
+        margin-top: 50px;
+        height: 100px;
     }
 }
