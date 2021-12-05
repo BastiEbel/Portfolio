@@ -224,25 +224,26 @@ header {
         width: 100%;
         margin-top: -14px;
     }
-}
-
-.darkLinks {
-    .d-none {
-        display: none;
-    }
-    a {
-        color: black;
-        background: white;
-
-        &::after{
+    .darkLinks {
+        .d-none{
+            display: none;
+        }
+        a {
+            color: black;
             background: white;
+    
+            &::after{
+                background: white;
+            }
+        }
+    
+        &:hover {
+            color: rgba(0, 0, 0, 0.8);
         }
     }
-
-    &:hover {
-        color: rgba(0, 0, 0, 0.8);
-    }
 }
+
+
 
 .headerWhite {
     position: unset;

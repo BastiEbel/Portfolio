@@ -17,7 +17,7 @@
             <div class="spinner horizontal"></div>
             <div class="spinner diagonal part-2"></div>
         </label>
-        <div id="sidebarMenu">
+        <div [class.darkLinks]="imprintMode" id="sidebarMenu">
             <div class="main-content-wrapper">
                 <a (click)="gotoTop()" routerLink="/">Home</a>
                 <a [class.d-none]="imprintMode" (click)="tomyskill()">My Skills</a>
