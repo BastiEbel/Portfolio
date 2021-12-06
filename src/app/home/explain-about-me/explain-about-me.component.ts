@@ -1,4 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
@@ -95,7 +96,8 @@ import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/co
 export class ExplainAboutMeComponent implements OnInit {
 
   isOpen = false;
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, public view: ViewportScroller) {
+        view.scrollToAnchor('aboutMe');
     }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){

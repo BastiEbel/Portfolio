@@ -8,7 +8,7 @@
         <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
         <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
         <a [class.d-none]="imprintMode" (click)="toMyContact()">Contact Me</a>
-        <a routerLinkActive="d-none" routerLink="/data-protection">Data Protection</a>
+        <a routerLinkActive="imprintMode = imprintMode" routerLink="/data-protection">Data Protection</a>
     </div>
     <div class="body">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">

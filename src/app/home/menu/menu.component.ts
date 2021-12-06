@@ -1,7 +1,6 @@
 
 import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,6 +14,7 @@ export class MenuComponent implements OnInit {
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
   @Input() imprintMode = false;
+  
 
   constructor(public view: ViewportScroller) { }
 
@@ -52,7 +52,10 @@ export class MenuComponent implements OnInit {
   }
 
   toAboutMe() {
-    this.view.scrollToAnchor('aboutMe');
+    this.view.scrollToAnchor('myWork');
+    setTimeout(() => {
+      this.view.scrollToAnchor('aboutMe');
+    }, 10);
   }
 
   toMyContact(){

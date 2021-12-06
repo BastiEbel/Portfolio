@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
   animations:[
     trigger('myH1Trigger', [
       transition(':enter', [
-        style({transform: 'translateX(500px)',
+        style({transform: 'translateX(1000px)',
           opacity: 0}),
           animate('500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
@@ -48,6 +48,7 @@ export class ContactMeComponent implements OnInit {
     }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
+    
     let element = this.el.nativeElement.offsetTop - window.innerHeight;
     let elHeight = this.el.nativeElement.clientHeight;
     let pos = window.pageYOffset - 50;
@@ -58,5 +59,6 @@ export class ContactMeComponent implements OnInit {
       this.isOpen = false;
     }
  }
-  ngOnInit(): void {}
+  
+ ngOnInit(): void {}
 }
