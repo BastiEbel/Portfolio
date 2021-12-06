@@ -101,7 +101,7 @@ export class ExplainAboutMeComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any){
     let element = this.el.nativeElement.offsetTop - window.innerHeight;
     let elHeight = this.el.nativeElement.clientHeight;
-    let pos = window.pageYOffset;
+    let pos = window.pageYOffset - 50;
     
     if(pos >= element || elHeight){
       document.getElementById('explainBorder')?.classList.add('explain-border');

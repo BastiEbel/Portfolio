@@ -8,7 +8,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(500px)',
           opacity: 0}),
-          animate('225ms ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -19,7 +19,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 225ms ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 225ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -30,7 +30,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 500ms ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -41,7 +41,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 750ms ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 750ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -52,7 +52,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -63,7 +63,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -74,7 +74,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 1.225s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1.225s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -85,7 +85,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('225ms 1.5s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1.5s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [

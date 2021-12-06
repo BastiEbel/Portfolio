@@ -1,5 +1,7 @@
 
-import { Component, HostListener, Input, OnInit} from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,13 +10,13 @@ import { Component, HostListener, Input, OnInit} from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  
+
 
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
-  @Input() imprintMode = true;
+  @Input() imprintMode = false;
 
-  constructor() { }
+  constructor(public view: ViewportScroller) { }
 
   ngOnInit(): void {
   }
@@ -23,7 +25,7 @@ export class MenuComponent implements OnInit {
   checkScroll() {
 
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    
+
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
     } else {
@@ -31,29 +33,29 @@ export class MenuComponent implements OnInit {
     }
   }
 
-  
-  
+
+
   gotoTop() {
-    window.scroll({ 
-      top: 0, 
-      left: 0, 
+    window.scroll({
+      top: 0,
+      left: 0,
       behavior: 'smooth',
     });
   }
 
-  tomyskill(){
-    document.getElementById('myskills')?.scrollIntoView({ behavior: 'smooth' });
+  tomyskill() {
+    this.view.scrollToAnchor('myskills');
   }
 
-  toAboutMe(){
-    document.getElementById('about-me')?.scrollIntoView({ behavior: 'smooth' });
+  toMyWork() {
+    this.view.scrollToAnchor('myWork');
   }
 
-  toMyWork(){
-    window.scroll({ 
-      top: 2050, 
-      left: 0, 
-      behavior: 'smooth',
-    });
+  toAboutMe() {
+    this.view.scrollToAnchor('aboutMe');
+  }
+
+  toMyContact(){
+    document.getElementById('contactMe')?.scrollIntoView({block: 'center' });
   }
 }

@@ -7,7 +7,7 @@
         <a [class.d-none]="imprintMode" (click)="tomyskill()">My Skills</a>
         <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
         <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
-        <a routerLinkActive="d-none" routerLink="/imprint">Imprint</a>
+        <a [class.d-none]="imprintMode" (click)="toMyContact()">Contact Me</a>
         <a routerLinkActive="d-none" routerLink="/data-protection">Data Protection</a>
     </div>
     <div class="body">
@@ -23,7 +23,7 @@
                 <a [class.d-none]="imprintMode" (click)="tomyskill()">My Skills</a>
                 <a [class.d-none]="imprintMode" (click)="toMyWork()">My Work</a>
                 <a [class.d-none]="imprintMode" (click)="toAboutMe()">About Me</a>
-                <a routerLinkActive="d-none" routerLink="/imprint">Imprint</a>
+                <a [class.d-none]="imprintMode" (click)="toMyContact()">Contact Me</a>
                 <a routerLinkActive="d-none" routerLink="/data-protection">Data Protection</a>
             </div>
         </div>
