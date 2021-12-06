@@ -1,4 +1,4 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
   animations:[
     trigger('myInsertTrigger', [
       transition(':enter', [
-        style({transform: 'translateX(500px)',
+        style({transform: 'translateX(1000px)',
           opacity: 0}),
           animate('500ms ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),

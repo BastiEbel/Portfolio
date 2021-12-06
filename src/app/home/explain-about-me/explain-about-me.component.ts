@@ -7,7 +7,7 @@ import { Component, ElementRef, HostListener, Inject, OnInit } from '@angular/co
     trigger('myImgTrigger', [
       transition(':enter', [
         style({
-          transform: 'translateX(500px)',
+          transform: 'translateX(1000px)',
           opacity: 0
         }),
         animate('500ms ease-in-out', style({
