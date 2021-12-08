@@ -11,10 +11,10 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
   @Input() imprintMode = false;
+  @Input() isOpen = false;
 
 
   constructor(public view: ViewportScroller, private router: Router) { }
@@ -44,7 +44,7 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  tomyskill() {
+  toMySkill() {
     this.view.scrollToAnchor('myskills');
   }
 

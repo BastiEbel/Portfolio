@@ -54,7 +54,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 })
 export class MySkillsComponent implements OnInit {
 
-  isOpen = false;;
+  isOpen = false;
 
   constructor(private el: ElementRef) {
     }

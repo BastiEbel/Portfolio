@@ -6,15 +6,17 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'data-protection', component: DataProtectionComponent},
-  {path: 'imprint', component: ImprintComponent}
+  { path: '', component: HomeComponent },
+  { path: 'data-protection', component: DataProtectionComponent },
+  { path: 'imprint', component: ImprintComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled',
-anchorScrolling: 'enabled',
-scrollOffset: [0, 25]})],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 25]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
