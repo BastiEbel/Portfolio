@@ -5,26 +5,22 @@
     flex-direction: column;
     padding-bottom: 80px;
     overflow: hidden;
-
     h2 {
         font-size: 48px;
         color: white;
         margin-bottom: 80px;
         margin-top: 80px;
     }
-
     .selection-switches {
         position: relative;
         display: flex;
         justify-content: center;
         color: white;
         margin-bottom: 60px;
-
         .isSelected {
             background-color: #fa2759;
             color: white;
         }
-
         .center {
             width: 180px;
             height: 60px;
@@ -32,7 +28,6 @@
             margin-right: 20px;
             margin-left: 20px;
         }
-
         .btn {
             width: 180px;
             height: 60px;
@@ -45,7 +40,6 @@
             outline: none;
             transition: 500ms ease-in-out;
         }
-
         svg {
             position: absolute;
             left: 0;
@@ -56,39 +50,34 @@
             stroke-dashoffset: 300;
             transition: 500ms ease-in-out;
         }
-
         .btn:hover {
             transition: 1s ease-in-out;
             background: #fa275893;
             color: white;
         }
-
         .btn:hover svg {
             stroke-dashoffset: -480;
         }
-
         .btn span {
             color: white;
             font-size: 18px;
             font-weight: 100;
         }
     }
-
     .d-none {
         display: none;
     }
-
     .container-picture {
+        width: 80%;
         display: flex;
         justify-content: center;
-
+        flex-wrap: wrap;
         img {
             object-fit: cover;
             height: 250px;
             width: 500px;
             margin: 25px;
         }
-
         .el-pollo-loco {
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
             display: flex;
@@ -102,7 +91,6 @@
             background-size: cover;
             background-position: center;
             font-size: 0px;
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -117,7 +105,6 @@
                     justify-content: flex-end;
                     flex-direction: column;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -135,19 +122,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -161,7 +145,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -180,7 +163,6 @@
                 }
             }
         }
-
         .lieferando {
             display: flex;
             justify-content: center;
@@ -195,7 +177,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -210,7 +191,6 @@
                     justify-content: flex-end;
                     flex-direction: column;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -233,13 +213,11 @@
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -253,7 +231,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -272,7 +249,6 @@
                 }
             }
         }
-
         .pokedex {
             display: flex;
             justify-content: center;
@@ -287,7 +263,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -303,7 +278,6 @@
                     flex-direction: column;
                     text-align: center;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -321,19 +295,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -347,7 +318,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -366,7 +336,6 @@
                 }
             }
         }
-
         .join {
             display: flex;
             justify-content: center;
@@ -381,7 +350,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -413,19 +381,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -439,7 +404,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -458,7 +422,6 @@
                 }
             }
         }
-
         .angularSite {
             display: flex;
             justify-content: center;
@@ -473,7 +436,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -505,19 +467,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -531,7 +490,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -550,7 +508,6 @@
                 }
             }
         }
-
         .ringOfFire {
             display: flex;
             justify-content: center;
@@ -565,7 +522,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -580,7 +536,6 @@
                     justify-content: flex-end;
                     flex-direction: column;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -598,19 +553,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -624,7 +576,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -643,7 +594,178 @@
                 }
             }
         }
-
+        .coinApi {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            height: 350px;
+            width: 500px;
+            margin: 25px;
+            background-image: url("/assets/img/coinApi.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
+            $speed: 0.5s;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    color: #fa2759;
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
+                }
+            }
+        }
+        .slackClone {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            height: 350px;
+            width: 500px;
+            margin: 25px;
+            background-image: url("/assets/img/slackClone.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 0px;
+            box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
+            $speed: 0.5s;
+            &:hover {
+                transform: scaleX(1.05);
+                .container-Link {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    color: #fa2759;
+                    .btn-flip {
+                        margin-top: 60px;
+                        opacity: 1;
+                        outline: 0;
+                        background-color: rgba(255, 255, 255, 0.699);
+                        width: 180px;
+                        height: 60px;
+                        border: 3px solid #fa2759;
+                        line-height: 60px;
+                        position: relative;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        display: inline-block;
+                        text-decoration: none;
+                        box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        &:hover {
+                            &:after {
+                                opacity: 1;
+                                transform: translateY(0) rotateX(0);
+                            }
+                            &:before {
+                                opacity: 0;
+                                transform: translateY(50%) rotateX(90deg);
+                            }
+                        }
+                        &:after {
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            width: 100%;
+                            color: white;
+                            display: block;
+                            transition: $speed;
+                            position: absolute;
+                            background: #fa2759;
+                            content: attr(data-back);
+                            transform: translateY(-50%) rotateX(90deg);
+                        }
+                        &:before {
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                            color: #fa2759;
+                            display: block;
+                            padding: 0 30px;
+                            line-height: 60px;
+                            transition: $speed;
+                            position: relative;
+                            background: rgba(255, 255, 255, 0.699);
+                            content: attr(data-front);
+                            transform: translateY(0) rotateX(0);
+                        }
+                    }
+                }
+            }
+        }
         .csharp {
             display: flex;
             justify-content: center;
@@ -658,7 +780,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -673,7 +794,6 @@
                     justify-content: flex-end;
                     flex-direction: column;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -691,19 +811,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -717,7 +834,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -736,7 +852,6 @@
                 }
             }
         }
-
         .cplusplus {
             display: flex;
             justify-content: center;
@@ -751,7 +866,6 @@
             background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
-
             $speed: 0.5s;
             &:hover {
                 transform: scaleX(1.05);
@@ -766,7 +880,6 @@
                     justify-content: flex-end;
                     flex-direction: column;
                     color: #fa2759;
-
                     .btn-flip {
                         margin-top: 60px;
                         opacity: 1;
@@ -784,19 +897,16 @@
                         box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.2);
                         font-size: 18px;
                         margin-bottom: 20px;
-
                         &:hover {
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
                             }
-
                             &:before {
                                 opacity: 0;
                                 transform: translateY(50%) rotateX(90deg);
                             }
                         }
-
                         &:after {
                             top: 0;
                             left: 0;
@@ -810,7 +920,6 @@
                             content: attr(data-back);
                             transform: translateY(-50%) rotateX(90deg);
                         }
-
                         &:before {
                             top: 0;
                             left: 0;
@@ -832,6 +941,14 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .container-my-work {
+        .container-picture {
+            width: unset;
+        }
+    }
+}
+
 @media (max-width: 1150px) {
     .container-my-work {
         .container-picture {
@@ -839,37 +956,38 @@
                 height: 250px;
                 width: 400px;
             }
-
             .el-pollo-loco {
                 height: 250px;
                 width: 400px;
             }
-
             .angularSite {
                 height: 250px;
                 width: 400px;
             }
-
             .join {
                 height: 250px;
                 width: 400px;
             }
-
             .lieferando {
                 height: 250px;
                 width: 400px;
             }
-
             .pokedex {
                 height: 250px;
                 width: 400px;
             }
-
             .ringOfFire {
                 height: 250px;
                 width: 400px;
             }
-
+            .coinApi {
+                height: 250px;
+                width: 400px;
+            }
+            .slackClone {
+                height: 250px;
+                width: 400px;
+            }
             .csharp {
                 height: 250px;
                 width: 400px;
@@ -879,7 +997,6 @@
                     }
                 }
             }
-
             .cplusplus {
                 height: 250px;
                 width: 400px;
@@ -891,13 +1008,11 @@
 @media (max-width: 1000px) {
     .container-my-work {
         height: unset;
-
         .container-picture {
             img {
                 height: 200px;
                 width: 300px;
             }
-
             .el-pollo-loco {
                 height: 200px;
                 width: 300px;
@@ -909,7 +1024,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -917,11 +1031,9 @@
                     }
                 }
             }
-
             .angularSite {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 18px;
@@ -930,7 +1042,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -938,11 +1049,9 @@
                     }
                 }
             }
-
             .join {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 18px;
@@ -951,7 +1060,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -959,11 +1067,9 @@
                     }
                 }
             }
-
             .lieferando {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 18px;
@@ -972,7 +1078,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -980,11 +1085,9 @@
                     }
                 }
             }
-
             .pokedex {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 18px;
@@ -993,7 +1096,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -1001,11 +1103,9 @@
                     }
                 }
             }
-
             .ringOfFire {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 18px;
@@ -1014,7 +1114,6 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: 10px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -1022,11 +1121,45 @@
                     }
                 }
             }
-
+            .coinApi {
+                height: 200px;
+                width: 300px;
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .slackClone {
+                height: 200px;
+                width: 300px;
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
             .cplusplus {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 16px;
@@ -1036,7 +1169,6 @@
                             line-height: 40px;
                             font-size: 10px;
                             margin-top: 40px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -1044,11 +1176,9 @@
                     }
                 }
             }
-
             .csharp {
                 height: 200px;
                 width: 300px;
-
                 &:hover {
                     .container-Link {
                         font-size: 16px;
@@ -1058,7 +1188,6 @@
                             line-height: 40px;
                             font-size: 10px;
                             margin-top: 20px;
-
                             &:before {
                                 line-height: 40px;
                             }
@@ -1073,7 +1202,7 @@
 @media (max-width: 900px) {
     .container-my-work {
         .selection-switches {
-            .center{
+            .center {
                 margin-left: 5px;
                 margin-right: 5px;
             }
@@ -1089,12 +1218,10 @@
         .selection-switches {
             flex-direction: column;
             margin-bottom: 40px;
-
             .center {
                 margin-bottom: 20px;
             }
         }
-
         .container-picture {
             flex-direction: column;
         }
@@ -1108,37 +1235,38 @@
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .angularSite {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .join {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .lieferando {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .pokedex {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .ringOfFire {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
+            .coinApi {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .slackClone {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
             .cplusplus {
                 margin-left: 0px;
                 margin-right: 0px;
             }
-
             .csharp {
                 margin-left: 0px;
                 margin-right: 0px;
@@ -1154,7 +1282,6 @@
                 height: 150px;
                 width: 200px;
             }
-
             .el-pollo-loco {
                 height: 150px;
                 width: 200px;
@@ -1168,7 +1295,6 @@
                     }
                 }
             }
-
             .angularSite {
                 height: 150px;
                 width: 200px;
@@ -1182,7 +1308,6 @@
                     }
                 }
             }
-
             .join {
                 height: 150px;
                 width: 200px;
@@ -1196,7 +1321,6 @@
                     }
                 }
             }
-
             .lieferando {
                 height: 150px;
                 width: 200px;
@@ -1210,7 +1334,6 @@
                     }
                 }
             }
-
             .pokedex {
                 height: 150px;
                 width: 200px;
@@ -1224,7 +1347,6 @@
                     }
                 }
             }
-
             .ringOfFire {
                 height: 150px;
                 width: 200px;
@@ -1238,7 +1360,32 @@
                     }
                 }
             }
-
+            .coinApi {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 12px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .slackClone {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 12px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
             .csharp {
                 height: 150px;
                 width: 200px;
@@ -1253,7 +1400,6 @@
                     }
                 }
             }
-
             .cplusplus {
                 height: 150px;
                 width: 200px;
@@ -1272,7 +1418,7 @@
 }
 
 @media (max-height: 1024px) {
-    .container-my-work{
+    .container-my-work {
         height: 100%;
     }
 }
