@@ -1,66 +1,72 @@
-.container-footer{
+.container-footer {
     height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 60px;
     border-top: 2px solid rgba(0, 0, 0, 0.13);
-
-    .imprint{
+    .imprint {
         text-decoration: none;
         color: black;
         font-size: 24px;
         margin-left: 80px;
-
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
-
-    a{
+    a {
         margin-right: 20px;
-
-        img:hover{
+        img:hover {
             transform: scale(1.1);
         }
     }
 }
 
-@media (max-width: 500px) {
-    .container-footer{
-        padding-right: 20px;
+@media (max-width: 600px) {
+    .container-footer {
+        padding-right: 40px;
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
 
-        .imprint{
+@media (max-width: 500px) {
+    .container-footer {
+        padding-right: 20px;
+        .imprint {
             margin-left: 40px;
         }
     }
 }
 
 @media (max-width: 420px) {
-    .container-footer{
+    .container-footer {
         padding-right: 10px;
-        img{
-            width: 48px;
-            height: 48px;
+        img {
+            width: 32px;
+            height: 32px;
         }
-
-        .imprint{
+        a {
+            font-size: 16px;
+        }
+        .imprint {
             margin-left: 20px;
         }
     }
 }
-@media (max-width: 300px) {
-    .container-footer{
-        
 
-        a{
-            margin-right: 10px;
+@media (max-width: 300px) {
+    .container-footer {
+        a {
+            margin-right: 5px;
         }
     }
 }
 
 @media (max-height: 750px) {
-    .container-footer{
+    .container-footer {
         margin-top: 50px;
         height: 100px;
     }
