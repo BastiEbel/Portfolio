@@ -31,44 +31,37 @@
     align-items: center;
     background-color: black;
     padding-top: 120px;
-    height: calc(75vh - 80px);
-
+    height: 80vh;
     .container-info {
         display: block;
         margin-right: 80px;
         animation: animationLeft 500ms ease-in-out;
     }
-
     h1 {
         font-size: 64px;
         color: white;
         margin-bottom: 80px;
     }
-
     .my-name {
         color: #fa2759;
     }
-
     .other-color {
         color: #2dfcd8;
     }
-
     img {
-        height: 350px;
-        width: 350px;
+        height: 450px;
+        width: 450px;
         border-radius: 50%;
         object-fit: cover;
         margin-top: 40px;
         margin-left: 80px;
         animation: animationRight 750ms ease-in-out;
     }
-
     .center {
         width: 180px;
         height: 60px;
         position: absolute;
     }
-
     .btn {
         width: 180px;
         height: 60px;
@@ -81,7 +74,6 @@
         outline: none;
         transition: 500ms ease-in-out;
     }
-
     svg {
         position: absolute;
         left: 0;
@@ -92,17 +84,14 @@
         stroke-dashoffset: 300;
         transition: 500ms ease-in-out;
     }
-
     .btn:hover {
         transition: 1s ease-in-out;
         background: #2dfcd960;
         color: white;
     }
-
     .btn:hover svg {
         stroke-dashoffset: -480;
     }
-
     .btn span {
         color: white;
         font-size: 18px;
@@ -121,7 +110,6 @@
     $bezier: cubic-bezier(0.77, 0, 0.175, 1);
     $bezier-bounce: cubic-bezier(0.87, -0.41, 0.19, 1.44);
     $anim-timing: 3s;
-
     html,
     body {
         height: 100%;
@@ -131,7 +119,6 @@
     body {
         background-color: $body-bg;
     }
-
     .ico {
         margin: 0 auto;
         text-align: center;
@@ -147,13 +134,11 @@
             display: inline-block;
             height: $circle-w;
             width: $circle-w;
-
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             transform-origin: 0%;
-
             &.circle-top {
                 height: $circle-w / 3;
                 width: $circle-w / 2.4;
@@ -169,7 +154,6 @@
                 bottom: 0px;
             }
         }
-
         .st-arrow {
             fill: $arrow-bg;
             animation: scrolly $anim-timing $bezier forwards infinite;
@@ -178,16 +162,13 @@
             transform-origin: bottom;
         }
     }
-
     .svg {
         z-index: 9;
         position: relative;
-
         &:hover {
             cursor: pointer;
         }
     }
-
     @keyframes blob-1-anim {
         0% {
             transform: translateX(-50%) translateY(0);
@@ -202,7 +183,6 @@
             transform: translateX(-50%) translateY(0);
         }
     }
-
     @keyframes blob-2-anim {
         0% {
             //transform: scale(1) translate(-50%,-150%);
@@ -225,7 +205,6 @@
             transform: scale(1) translate(-50%, 10px);
         }
     }
-
     @keyframes scrolly {
         0% {
             transform: translate3d(0, -150%, 0) rotateX(90deg) scale(0.5) skewX(3deg);
@@ -248,16 +227,15 @@
 @media (max-width: 1350px) {
     .container-about-me {
         padding-top: 20px;
-
         .container-info {
             margin-right: 50px;
         }
-
         h1 {
             font-size: 48px;
         }
-
         img {
+            height: 350px;
+            width: 350px;
             margin-left: 50px;
         }
     }
@@ -271,14 +249,12 @@
         h1 {
             font-size: 44px;
         }
-
         img {
             height: 300px;
             width: 300px;
             margin-left: 40px;
         }
     }
-
     .container-arrow {
         padding-top: 80px;
     }
@@ -289,7 +265,6 @@
         .container-info {
             margin-right: 40px;
         }
-
         img {
             margin-left: 40px;
         }
@@ -301,15 +276,14 @@
         .container-info {
             margin-right: 0px;
         }
-
         h1 {
             font-size: 36px;
         }
-
+        /*
         img {
-            height: 250px;
-            width: 250px;
-        }
+            height: 300px;
+            width: 300px;
+        } */
     }
 }
 
@@ -318,21 +292,22 @@
         flex-direction: column-reverse;
         justify-content: center;
         padding-top: 40px;
-
         h1 {
             margin-bottom: 40px;
         }
-
         img {
             margin-left: 0px;
         }
-
         .container-contactMe {
             width: 40%;
             margin-left: 30%;
         }
+        .container-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
-
     .container-arrow {
         img {
             height: 50px;
@@ -347,20 +322,12 @@
         h1 {
             font-size: 32px;
         }
-
         img {
             height: 200px;
             width: 200px;
         }
-
         .container-contactMe {
             margin-bottom: 10px;
-        }
-
-        .container-btn {
-            width: 100%;
-            display: flex;
-            justify-content: center;
         }
     }
 }
@@ -376,13 +343,11 @@
             margin-bottom: 80px;
             margin-top: 0px;
         }
-
         img {
             margin-top: 0px;
             margin-bottom: 20px;
         }
     }
-
     .container-arrow {
         img {
             margin-bottom: 30px;
@@ -393,7 +358,6 @@
 @media (max-width: 380px) {
     .container-about-me {
         height: calc(90vh - 100px);
-
         h1 {
             font-size: 18px;
             margin-bottom: 40px;
@@ -402,36 +366,29 @@
             width: 60%;
             margin-left: 20%;
         }
-
         .center {
             height: 40px;
             width: 90px;
         }
-
         .btn {
             height: 40px;
             width: 90px;
             font-size: 12px;
         }
-
         svg {
             height: 40px;
             width: 90px;
         }
-
         img {
             height: 150px;
             width: 150px;
         }
     }
-
     .container-arrow {
         $circle-w: 50px;
-
         .ico {
             height: $circle-w;
             width: $circle-w;
-
             .circle {
                 height: $circle-w;
                 width: $circle-w;
@@ -450,7 +407,6 @@
                 width: 200px;
             }
         }
-
         .container-arrow {
             padding-top: 150px;
             img {

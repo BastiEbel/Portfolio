@@ -28,81 +28,46 @@
                 JavaScript
             </button>
         </div>
-        <div @myBtnCTrigger *ngIf="isOpen" (click)="btnC()" id="cSharp" class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                C# / C++
-            </button>
-        </div>
     </div>
-    <div id="containerJS" class="container-picture">
+    <!-- <div id="containerJS" class="container-picture">
         <div @myJoinTrigger *ngIf="isOpen" class="join">
             <div class="container-Link">
                 Join is an app to coordinate work
                 <a href="http://gruppe-97.developerakademie.com/index.html" class="btn-flip" data-back="Join" data-front="Try it out"></a>
             </div>
         </div>
-        <div @myPokedexTrigger *ngIf="isOpen" class="pokedex">
-            <div class="container-Link">
-                This is a collection of pokemons<br> and their skills
-                <a href="http://sebastian-ebel.developerakademie.com/pokodex/index.html" class="btn-flip" data-back="PokeDex" data-front="Try it out"></a>
-            </div>
-        </div>
-    </div>
+    </div> -->
     <div id="containerJavaScript" class="container-picture">
-        <div @myRestaurantTrigger *ngIf="isOpen" class="lieferando">
-            <div class="container-Link">
-                It is a Restaurant site
-                <a href="http://sebastian-ebel.developerakademie.com/Lieferando/index.html" class="btn-flip" data-back="Restaurant Site" data-front="Try it out"></a>
-            </div>
-        </div>
         <div @myPepeTrigger *ngIf="isOpen" class="el-pollo-loco">
             <div class="container-Link">
-                It is a jump and run game
-                <a href="http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html" class="btn-flip" data-back="El-Pollo-Loco" data-front="Try it out"></a>
+                <p>OOP-based jump-and-run-game</p>
+                <a (click)="pepe('http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html')" class="btn-flip" data-back="El-Pollo-Loco" data-front="Try it out"></a>
             </div>
         </div>
     </div>
     <div id="containerAngular" class="container-picture">
         <div @mySiteTrigger *ngIf="isOpen" class="angularSite">
             <div class="container-Link">
-                This site is written with Angular
-                <a href="#" class="btn-flip" data-back="This Site" data-front="Try it out"></a>
+                <p>This site is written with Angular</p>
+                <a (click)="portfolio('https://sebastianebel-developer.de')" class="btn-flip" data-back="This Site" data-front="Try it out"></a>
             </div>
         </div>
         <div @ringOfFireTrigger *ngIf="isOpen" class="ringOfFire">
             <div class="container-Link">
-                Ring of Fire is a popular drinking game
-                <a href="https://ring-of-fire-650e5.web.app" class="btn-flip" data-back="Ring of Fire" data-front="Try it out"></a>
+                <p>Ring of Fire is a popular drinking game (Angular and Firestore)</p>
+                <a (click)="ringoffire('https://ring-of-fire-650e5.web.app')" class="btn-flip" data-back="Ring of Fire" data-front="Try it out"></a>
             </div>
         </div>
         <div @coinApiTrigger *ngIf="isOpen" class="coinApi">
             <div class="container-Link">
-                Shows the current daily coin rate
-                <a href="https://sebastianebel-developer.de/coinApi/home" class="btn-flip" data-back="Coin Api" data-front="Try it out"></a>
+                <p>Shows the current daily coin rate (Rest-Api in Angular)</p>
+                <a (click)="coin('https://sebastianebel-developer.de/coinApi/home')" class="btn-flip" data-back="Coin Api" data-front="Try it out"></a>
             </div>
         </div>
         <div @slackCloneTrigger *ngIf="isOpen" class="slackClone">
             <div class="container-Link">
-                This is a chat program like slack
-                <a href="https://gruppe-149.developerakademie.net/index.html" class="btn-flip" data-back="Slack Clone" data-front="Try it out"></a>
-            </div>
-        </div>
-    </div>
-    <div id="containerC" class="container-picture">
-        <div @mycsharpTrigger *ngIf="isOpen" class="csharp">
-            <div class="container-Link">
-                I started with a trade fair planner tool in C# 2 weeks before I started at the Developer Academy. Unfortunately it's not finished yet. It is published on Github
-                <a href="https://github.com/BastiEbel/MessePlaner" class="btn-flip" data-back="Fair PLanner" data-front="look at"></a>
-            </div>
-        </div>
-        <div @mycplusplusTrigger *ngIf="isOpen" class="cplusplus">
-            <div class="container-Link">
-                This program was written in C++/CLI to Renè Böhme and me to collect chemistry formulas
-                <a href="https://www.rb-softarticle.com/list-of-synthesen-1-0" class="btn-flip" data-back="List of Synthese" data-front="look at"></a>
+                <p>It is a chat program like Slack (Angular and Firestore)</p>
+                <a (click)="slack('https://gruppe-149.developerakademie.net/index.html')" class="btn-flip" data-back="Slack Clone" data-front="Try it out"></a>
             </div>
         </div>
     </div>

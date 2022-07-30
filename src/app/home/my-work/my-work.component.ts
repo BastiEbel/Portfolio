@@ -48,17 +48,6 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
-    trigger('myBtnCTrigger', [
-      transition(':enter', [
-        style({transform: 'translateX(1000px)',
-          opacity: 0}),
-          animate('500ms 600ms ease-in-out', style({transform: 'translateX(0px)',
-            opacity: 1})),
-      ]),
-      transition(':leave', [
-        animate('100ms', style({ opacity: 0 }))
-      ])
-    ]),
     trigger('myJoinTrigger', [
       transition(':enter', [
         style({transform: 'translateX(1000px)',
@@ -70,33 +59,11 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
         animate('100ms', style({ opacity: 0 }))
       ])
     ]),
-    trigger('myPokedexTrigger', [
-      transition(':enter', [
-        style({transform: 'translateX(1000px)',
-          opacity: 0}),
-          animate('500ms 900ms ease-in-out', style({transform: 'translateX(0px)',
-            opacity: 1})),
-      ]),
-      transition(':leave', [
-        animate('100ms', style({ opacity: 0 }))
-      ])
-    ]),
-    trigger('myRestaurantTrigger', [
-      transition(':enter', [
-        style({transform: 'translateX(1000px)',
-          opacity: 0}),
-          animate('500ms 1.05s ease-in-out', style({transform: 'translateX(0px)',
-            opacity: 1})),
-      ]),
-      transition(':leave', [
-        animate('100ms', style({ opacity: 0 }))
-      ])
-    ]),
     trigger('myPepeTrigger', [
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('500ms 1.2s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -107,7 +74,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('500ms 1.35s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1.25s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -129,7 +96,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('500ms 1.65s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 1.75s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -140,29 +107,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
       transition(':enter', [
         style({transform: 'translateX(1000px)',
           opacity: 0}),
-          animate('500ms 1.8s ease-in-out', style({transform: 'translateX(0px)',
-            opacity: 1})),
-      ]),
-      transition(':leave', [
-        animate('100ms', style({ opacity: 0 }))
-      ])
-    ]),
-    trigger('mycsharpTrigger', [
-      transition(':enter', [
-        style({transform: 'translateX(1000px)',
-          opacity: 0}),
-          animate('500ms 1.95s ease-in-out', style({transform: 'translateX(0px)',
-            opacity: 1})),
-      ]),
-      transition(':leave', [
-        animate('100ms', style({ opacity: 0 }))
-      ])
-    ]),
-    trigger('mycplusplusTrigger', [
-      transition(':enter', [
-        style({transform: 'translateX(1000px)',
-          opacity: 0}),
-          animate('500ms 2.1s ease-in-out', style({transform: 'translateX(0px)',
+          animate('500ms 2s ease-in-out', style({transform: 'translateX(0px)',
             opacity: 1})),
       ]),
       transition(':leave', [
@@ -175,7 +120,7 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
 
-  isOpen = false;
+  public isOpen:boolean = false;
   constructor(private el: ElementRef) {
     }
 
@@ -183,7 +128,7 @@ export class MyWorkComponent implements OnInit {
     let element = this.el.nativeElement.offsetTop - window.innerHeight;
     let elHeight = this.el.nativeElement.clientHeight;
     let pos = window.pageYOffset;
-    
+
     if(pos >= element || elHeight){
       this.isOpen = true;
     } else {
@@ -194,34 +139,48 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  pepe(url: string){
+    window.open(url, "_blank");
+  }
+
+  portfolio(url: string){
+    window.open(url, "_blank");
+  }
+
+  slack(url: string){
+    window.open(url, "_blank");
+  }
+
+  ringoffire(url: string){
+    window.open(url, "_blank");
+  }
+
+  coin(url: string){
+    window.open(url, "_blank");
+  }
+
   btnAll(){
     document.getElementById('all')?.classList.add('isSelected');
     document.getElementById('containerJS')?.classList.remove('d-none');
     document.getElementById('containerJavaScript')?.classList.remove('d-none');
     document.getElementById('containerAngular')?.classList.remove('d-none');
-    document.getElementById('containerC')?.classList.remove('d-none');
     document.getElementById('containerJS')?.classList.add('container-picture');
     document.getElementById('containerJavaScript')?.classList.add('container-picture');
     document.getElementById('containerAngular')?.classList.add('container-picture');
-    document.getElementById('containerC')?.classList.add('container-picture');
     document.getElementById('angular')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.remove('isSelected');
-    document.getElementById('cSharp')?.classList.remove('isSelected');
   }
 
   btnAngular(){
     document.getElementById('angular')?.classList.add('isSelected');
     document.getElementById('containerJS')?.classList.add('d-none');
     document.getElementById('containerJavaScript')?.classList.add('d-none');
-    document.getElementById('containerC')?.classList.add('d-none');
     document.getElementById('containerAngular')?.classList.remove('d-none');
     document.getElementById('containerJS')?.classList.remove('container-picture');
     document.getElementById('containerJavaScript')?.classList.remove('container-picture');
-    document.getElementById('containerC')?.classList.remove('container-picture');
     document.getElementById('containerAngular')?.classList.add('container-picture');
     document.getElementById('all')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.remove('isSelected');
-    document.getElementById('cSharp')?.classList.remove('isSelected');
   }
 
   btnJavaScript(){
@@ -229,28 +188,10 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('containerJS')?.classList.remove('d-none');
     document.getElementById('containerJavaScript')?.classList.remove('d-none');
     document.getElementById('containerAngular')?.classList.add('d-none');
-    document.getElementById('containerC')?.classList.add('d-none');
     document.getElementById('containerJS')?.classList.add('container-picture');
     document.getElementById('containerJavaScript')?.classList.add('container-picture');
     document.getElementById('containerAngular')?.classList.remove('container-picture');
-    document.getElementById('containerC')?.classList.remove('container-picture');
     document.getElementById('angular')?.classList.remove('isSelected');
     document.getElementById('javaScript')?.classList.add('isSelected');
-    document.getElementById('cSharp')?.classList.remove('isSelected');
-  }
-
-  btnC(){
-    document.getElementById('all')?.classList.remove('isSelected');
-    document.getElementById('containerJS')?.classList.add('d-none');
-    document.getElementById('containerJavaScript')?.classList.add('d-none');
-    document.getElementById('containerAngular')?.classList.add('d-none');
-    document.getElementById('containerC')?.classList.remove('d-none');
-    document.getElementById('containerJS')?.classList.remove('container-picture');
-    document.getElementById('containerJavaScript')?.classList.remove('container-picture');
-    document.getElementById('containerAngular')?.classList.remove('container-picture');
-    document.getElementById('containerC')?.classList.add('container-picture');
-    document.getElementById('angular')?.classList.remove('isSelected');
-    document.getElementById('javaScript')?.classList.remove('isSelected');
-    document.getElementById('cSharp')?.classList.add('isSelected');
   }
 }
