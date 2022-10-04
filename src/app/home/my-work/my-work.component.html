@@ -1,35 +1,53 @@
 <div id="myWork" (scroll)="onScrollEvent($event)" class="container-my-work">
-    <h2 @myWorkTrigger *ngIf="isOpen">My Work</h2>
-    <div class="selection-switches">
-        <div @myBtnAllTrigger *ngIf="isOpen" (click)="btnAll()" id="all" class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                All
-            </button>
-        </div>
-        <div @myBtnAngularTrigger *ngIf="isOpen" (click)="btnAngular()" id="angular" class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                Angular
-            </button>
-        </div>
-        <div @myBtnJsTrigger *ngIf="isOpen" (click)="btnJavaScript()" id="javaScript" class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                JavaScript
-            </button>
-        </div>
+  <h2 @myWorkTrigger *ngIf="isOpen">My Work</h2>
+  <div class="selection-switches">
+    <div
+      @myBtnAllTrigger
+      *ngIf="isOpen"
+      (click)="btnAll()"
+      id="all"
+      class="center"
+    >
+      <button class="btn">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        All
+      </button>
     </div>
-    <!-- <div id="containerJS" class="container-picture">
+    <div
+      @myBtnAngularTrigger
+      *ngIf="isOpen"
+      (click)="btnAngular()"
+      id="angular"
+      class="center"
+    >
+      <button class="btn">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        Angular
+      </button>
+    </div>
+    <div
+      @myBtnJsTrigger
+      *ngIf="isOpen"
+      (click)="btnJavaScript()"
+      id="javaScript"
+      class="center"
+    >
+      <button class="btn">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        JavaScript
+      </button>
+    </div>
+  </div>
+  <!-- <div id="containerJS" class="container-picture">
         <div @myJoinTrigger *ngIf="isOpen" class="join">
             <div class="container-Link">
                 Join is an app to coordinate work
@@ -37,38 +55,67 @@
             </div>
         </div>
     </div> -->
-    <div id="containerJavaScript" class="container-picture">
-        <div @myPepeTrigger *ngIf="isOpen" class="el-pollo-loco">
-            <div class="container-Link">
-                <p>OOP-based jump-and-run-game</p>
-                <a (click)="pepe('http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html')" class="btn-flip" data-back="El-Pollo-Loco" data-front="Try it out"></a>
-            </div>
-        </div>
+  <div id="containerJavaScript" class="container-picture">
+    <div @myPepeTrigger *ngIf="isOpen" class="el-pollo-loco">
+      <div class="container-Link">
+        <p>OOP-based jump-and-run-game</p>
+        <a
+          (click)="
+            pepe(
+              'http://sebastian-ebel.developerakademie.com/El-pollo-loco/index.html'
+            )
+          "
+          class="btn-flip"
+          data-back="El-Pollo-Loco"
+          data-front="Try it out"
+        ></a>
+      </div>
     </div>
-    <div id="containerAngular" class="container-picture">
-        <div @mySiteTrigger *ngIf="isOpen" class="angularSite">
-            <div class="container-Link">
-                <p>This site is written with Angular</p>
-                <a (click)="portfolio('https://sebastianebel-developer.de')" class="btn-flip" data-back="This Site" data-front="Try it out"></a>
-            </div>
-        </div>
-        <div @ringOfFireTrigger *ngIf="isOpen" class="ringOfFire">
-            <div class="container-Link">
-                <p>Ring of Fire is a popular drinking game (Angular and Firestore)</p>
-                <a (click)="ringoffire('https://ring-of-fire-650e5.web.app')" class="btn-flip" data-back="Ring of Fire" data-front="Try it out"></a>
-            </div>
-        </div>
-        <div @coinApiTrigger *ngIf="isOpen" class="coinApi">
-            <div class="container-Link">
-                <p>Shows the current daily coin rate (Rest-Api in Angular)</p>
-                <a (click)="coin('https://sebastianebel-developer.de/coinApi/home')" class="btn-flip" data-back="Coin Api" data-front="Try it out"></a>
-            </div>
-        </div>
-        <div @slackCloneTrigger *ngIf="isOpen" class="slackClone">
-            <div class="container-Link">
-                <p>It is a chat program like Slack (Angular and Firestore)</p>
-                <a (click)="slack('https://gruppe-149.developerakademie.net/index.html')" class="btn-flip" data-back="Slack Clone" data-front="Try it out"></a>
-            </div>
-        </div>
+  </div>
+  <div id="containerAngular" class="container-picture">
+    <div @mySiteTrigger *ngIf="isOpen" class="angularSite">
+      <div class="container-Link">
+        <p>This site is written with Angular</p>
+        <a
+          (click)="portfolio('https://sebastianebel-developer.de')"
+          class="btn-flip"
+          data-back="This Site"
+          data-front="Try it out"
+        ></a>
+      </div>
     </div>
+    <div @ringOfFireTrigger *ngIf="isOpen" class="ringOfFire">
+      <div class="container-Link">
+        <p>Ring of Fire is a popular drinking game (Angular and Firestore)</p>
+        <a
+          (click)="ringoffire('https://ring-of-fire-650e5.web.app')"
+          class="btn-flip"
+          data-back="Ring of Fire"
+          data-front="Try it out"
+        ></a>
+      </div>
+    </div>
+    <div @coinApiTrigger *ngIf="isOpen" class="coinApi">
+      <div class="container-Link">
+        <p>Shows the current daily coin rate (Rest-Api in Angular)</p>
+        <a
+          (click)="coin('https://sebastianebel-developer.de/coinApi/home')"
+          class="btn-flip"
+          data-back="Coin Api"
+          data-front="Try it out"
+        ></a>
+      </div>
+    </div>
+    <div @slackCloneTrigger *ngIf="isOpen" class="slackClone">
+      <div class="container-Link">
+        <p>It is a chat program like Slack (Angular and Firestore)</p>
+        <a
+          (click)="slack('https://cloneSlack.sebastianebel-developer.de')"
+          class="btn-flip"
+          data-back="Slack Clone"
+          data-front="Try it out"
+        ></a>
+      </div>
+    </div>
+  </div>
 </div>
