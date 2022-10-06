@@ -1,31 +1,29 @@
-
 import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
   @Input() imprintMode = false;
-  @Input() isOpen = false;
+  @Input() isOpen = true;
 
+  constructor(public view: ViewportScroller, private router: Router) {}
 
-  constructor(public view: ViewportScroller, private router: Router) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   @HostListener('window:scroll')
   checkScroll() {
-
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const scrollPosition =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
 
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
@@ -33,8 +31,6 @@ export class MenuComponent implements OnInit {
       this.isShow = false;
     }
   }
-
-
 
   gotoTop() {
     window.scroll({
