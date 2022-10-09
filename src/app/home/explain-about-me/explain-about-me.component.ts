@@ -7,10 +7,12 @@ import {
 } from '@angular/animations';
 import { ViewportScroller } from '@angular/common';
 import {
+  ChangeDetectorRef,
   Component,
   ElementRef,
   HostListener,
   Inject,
+  Input,
   OnInit,
 } from '@angular/core';
 
@@ -116,9 +118,14 @@ import {
   styleUrls: ['./explain-about-me.component.scss'],
 })
 export class ExplainAboutMeComponent implements OnInit {
-  isOpen = false;
-  constructor(private el: ElementRef, public view: ViewportScroller) {
-    view.scrollToAnchor('aboutMe');
+  @Input() isOpen: any;
+  constructor(
+    private el: ElementRef,
+    public view: ViewportScroller,
+    private cdref: ChangeDetectorRef
+  ) {
+    /* 
+    view.scrollToAnchor('aboutMe'); */
   }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any) {
@@ -128,9 +135,9 @@ export class ExplainAboutMeComponent implements OnInit {
 
     if (pos >= element || elHeight) {
       document.getElementById('explainBorder')?.classList.add('explain-border');
-      this.isOpen = true;
+      this.isOpen = this.isOpen;
     } else {
-      this.isOpen = false;
+      this.isOpen = !this.isOpen;
       document
         .getElementById('explainBorder')
         ?.classList.remove('explain-border');
@@ -138,4 +145,9 @@ export class ExplainAboutMeComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+  ngAfterViewChecked() {
+    this.isOpen = true;
+    this.cdref.detectChanges();
+    return this.isOpen;
+  }
 }

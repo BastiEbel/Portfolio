@@ -1,5 +1,12 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,9 +18,13 @@ export class MenuComponent implements OnInit {
   isShow: boolean | undefined;
   topPosToStartShowing = 100;
   @Input() imprintMode = false;
-  @Input() isOpen = true;
+  @Output() isOpen: any = true;
 
-  constructor(public view: ViewportScroller, private router: Router) {}
+  constructor(
+    public view: ViewportScroller,
+    private router: Router,
+    public el: ElementRef
+  ) {}
 
   ngOnInit(): void {}
 

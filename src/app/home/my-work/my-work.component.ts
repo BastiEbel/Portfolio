@@ -1,20 +1,21 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  HostListener,
+  Input,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-my-work',
   animations: [
     trigger('myWorkTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(500px)', opacity: 0 }),
+        style({ transform: 'translateX(250px)', opacity: 0 }),
         animate(
-          '500ms ease-in-out',
+          '225ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -22,9 +23,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('myBtnAllTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 225ms ease-in-out',
+          '225ms 225ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -32,9 +33,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('myBtnAngularTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 300ms ease-in-out',
+          '225ms 300ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -42,9 +43,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('myBtnJsTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 450ms ease-in-out',
+          '225ms 450ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -52,9 +53,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('myJoinTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 750ms ease-in-out',
+          '225ms 600ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -62,9 +63,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('myPepeTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 1s ease-in-out',
+          '225ms 800ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -72,9 +73,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('mySiteTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 1.25s ease-in-out',
+          '225ms 1s ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -82,9 +83,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('ringOfFireTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 1.5s ease-in-out',
+          '225ms 1.2s ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -92,9 +93,9 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('coinApiTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 1.75s ease-in-out',
+          '225ms 1.4s ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -102,21 +103,21 @@ import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
     ]),
     trigger('slackCloneTrigger', [
       transition(':enter', [
-        style({ transform: 'translateX(1000px)', opacity: 0 }),
+        style({ transform: 'translateX(500px)', opacity: 0 }),
         animate(
-          '500ms 2s ease-in-out',
+          '225ms 1.6s ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
-      transition(':leave', [animate('100ms', style({ opacity: 0 }))]),
+      transition(':leave', [animate('100ms', style({ opacity: 1 }))]),
     ]),
   ],
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss'],
 })
 export class MyWorkComponent implements OnInit {
-  public isOpen: boolean = false;
-  constructor(private el: ElementRef) {}
+  @Input() isOpen: any;
+  constructor(private el: ElementRef, private cdref: ChangeDetectorRef) {}
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any) {
     let element = this.el.nativeElement.offsetTop - window.innerHeight;
@@ -124,13 +125,19 @@ export class MyWorkComponent implements OnInit {
     let pos = window.pageYOffset;
 
     if (pos >= element || elHeight) {
-      this.isOpen = true;
+      this.isOpen = this.isOpen;
     } else {
-      this.isOpen = false;
+      this.isOpen = !this.isOpen;
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {}
+
+  ngAfterViewChecked() {
+    this.isOpen = true;
+    this.cdref.detectChanges();
+    return this.isOpen;
+  }
 
   pepe(url: string) {
     window.open(url, '_blank');

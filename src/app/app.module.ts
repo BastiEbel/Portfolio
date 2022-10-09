@@ -15,8 +15,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,16 +27,16 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     ImprintComponent,
     HomeComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
   ],
   imports: [
     NgxPageScrollCoreModule,
     BrowserModule,
     BrowserAnimationsModule,
     ScrollToModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

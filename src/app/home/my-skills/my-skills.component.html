@@ -1,47 +1,51 @@
-<section id="myskills" (scroll)="onScrollEvent($event)" class="container-my-skills">
-    <h2 @myInsertTrigger *ngIf="isOpen">My Skills</h2>
-    <div @myTrigger *ngIf="isOpen" class="container-skills">
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/java script.png">
-            </div>
-            JavaScript
-        </div>
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/icons8-angularjs-48.png">
-            </div>
-            Angular
-        </div>
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/Group 205.png">
-            </div>
-            HTML/CSS
-        </div>
+<section
+  id="myskills"
+  (scroll)="onScrollEvent($event)"
+  class="container-my-skills"
+>
+  <h2 @myInsertTrigger *ngIf="isOpen">My Skills</h2>
+  <div @myTrigger *ngIf="isOpen" class="container-skills">
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/java script.png" />
+      </div>
+      JavaScript
     </div>
-    <div @myTrigger1 *ngIf="isOpen" class="container-skills">
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/Group 226.png">
-            </div>
-            SCRUM
-        </div>
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/Git-Icon-1788C 2.png">
-            </div>
-            Git
-        </div>
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/icons8-rest-api-80 2.png">
-            </div>
-            Rest API
-        </div>
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/icons8-angularjs-48.png" />
+      </div>
+      Angular
     </div>
-    <div @myTrigger2 *ngIf="isOpen" class="container-skills">
-        <!-- <div class="my-skills">
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/Group 205.png" />
+      </div>
+      HTML/CSS
+    </div>
+  </div>
+  <div @myTrigger1 *ngIf="isOpen" class="container-skills">
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/Group 226.png" />
+      </div>
+      SCRUM
+    </div>
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/Git-Icon-1788C 2.png" />
+      </div>
+      Git
+    </div>
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/icons8-rest-api-80 2.png" />
+      </div>
+      Rest API
+    </div>
+  </div>
+  <div @myTrigger2 *ngIf="isOpen" class="container-skills">
+    <!-- <div class="my-skills">
             <div class="icon-img">
                 <img src="assets/img/c-logo-icon-28389.png">
             </div>
@@ -53,11 +57,11 @@
             </div>
             C#
         </div> -->
-        <div class="my-skills">
-            <div class="icon-img">
-                <img src="assets/img/icons8-database-52 2.png">
-            </div>
-            Database
-        </div>
+    <div class="my-skills">
+      <div class="icon-img">
+        <img src="assets/img/icons8-database-52 2.png" />
+      </div>
+      Database
     </div>
+  </div>
 </section>
