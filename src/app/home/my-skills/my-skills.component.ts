@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import {
+  ChangeDetectorRef,
   Component,
   ElementRef,
   HostListener,
@@ -13,7 +14,7 @@ import {
       transition(':enter', [
         style({ transform: 'translateX(1000px)', opacity: 0 }),
         animate(
-          '500ms ease-in-out',
+          '225ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -23,7 +24,7 @@ import {
       transition(':enter', [
         style({ transform: 'translateX(1000px)', opacity: 0 }),
         animate(
-          '500ms 225ms ease-in-out',
+          '225ms 225ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -33,7 +34,7 @@ import {
       transition(':enter', [
         style({ transform: 'translateX(1000px)', opacity: 0 }),
         animate(
-          '500ms 500ms ease-in-out',
+          '225ms 500ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -43,7 +44,7 @@ import {
       transition(':enter', [
         style({ transform: 'translateX(1000px)', opacity: 0 }),
         animate(
-          '500ms 750ms ease-in-out',
+          '225ms 750ms ease-in-out',
           style({ transform: 'translateX(0px)', opacity: 1 })
         ),
       ]),
@@ -54,10 +55,9 @@ import {
   styleUrls: ['./my-skills.component.scss'],
 })
 export class MySkillsComponent implements OnInit {
-  //isOpen = false;
   @Input() isOpen: any;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private cdref: ChangeDetectorRef) {}
 
   @HostListener('window:scroll', ['$event']) onScrollEvent(event: any) {
     let element = this.el.nativeElement.offsetTop - window.innerHeight;
@@ -65,11 +65,16 @@ export class MySkillsComponent implements OnInit {
     let pos = window.pageYOffset;
 
     if (pos >= element || elHeight) {
-      this.isOpen = true;
+      this.isOpen = this.isOpen;
     } else {
-      this.isOpen = false;
+      this.isOpen = !this.isOpen;
     }
   }
 
   ngOnInit(): void {}
+  ngAfterViewChecked() {
+    this.isOpen = true;
+    this.cdref.detectChanges();
+    return this.isOpen;
+  }
 }
