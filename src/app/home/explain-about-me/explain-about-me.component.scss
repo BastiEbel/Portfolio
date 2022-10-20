@@ -1,23 +1,23 @@
-.container{
+.container {
     background-color: #1a1a1a;
     padding-bottom: 80px;
     padding-top: 40px;
     overflow: hidden;
     height: 100vh;
 }
-.container-explain{
+.container-explain {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .explain-me{
+    .explain-me {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 80px;
         width: 80%;
 
-        img{
+        img {
             width: 250px;
             height: 250px;
             border-radius: 50%;
@@ -25,31 +25,30 @@
             margin-bottom: 80px;
             object-fit: cover;
         }
-        .img-slide{
+        .img-slide {
             animation: slideRight 1.5s ease-in-out;
         }
 
-        .short-explain{
+        .short-explain {
             font-size: 18px;
             color: white;
             margin-left: 80px;
             margin-bottom: 100px;
-            
         }
-        .short-slide{
+        .short-slide {
             animation: slideRight 2s ease-in-out;
         }
 
-        h2{
+        h2 {
             font-size: 36px;
         }
     }
-    .explain-border{
-        border-bottom: 2px solid #2DFCD8;
+    .explain-border {
+        border-bottom: 2px solid #2dfcd8;
     }
 }
 
-.container-my-journey{
+.container-my-journey {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -57,7 +56,7 @@
     padding-left: 10%;
     padding-right: 10%;
 
-    .my-journey{
+    .my-journey {
         font-size: 18px;
         color: white;
         width: 20%;
@@ -67,21 +66,21 @@
         flex-direction: column;
         text-align: center;
 
-        h4{
+        h4 {
             font-size: 24px;
         }
 
-        .my-journey-pic{
+        .my-journey-pic {
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background-color: #2DFCD8;
+            background-color: #2dfcd8;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        img{
+        img {
             width: 40px;
             height: 40px;
         }
@@ -89,28 +88,28 @@
 }
 
 @media (max-width: 1024px) {
-    .container-explain{
-        .explain-me{
-            img{
+    .container-explain {
+        .explain-me {
+            img {
                 width: 150px;
                 height: 150px;
             }
 
-            .short-explain{
+            .short-explain {
                 margin-left: 50px;
             }
         }
     }
 
-    .container-my-journey{
-        .my-journey{
-            height: 450px;
-
-            h4{
+    .container-my-journey {
+        .my-journey {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            h4 {
                 font-size: 20px;
             }
 
-            .my-journey-pic{
+            .my-journey-pic {
                 width: 50px;
                 height: 50px;
             }
@@ -119,39 +118,35 @@
 }
 
 @media (max-width: 850px) {
-    .container{
+    .container {
         height: unset;
     }
 }
 
 @media (max-width: 780px) {
-    .container{
-
-        .container-explain{
-            
-            .explain-me{
+    .container {
+        .container-explain {
+            .explain-me {
                 flex-direction: column;
-                
 
-                img{
+                img {
                     margin-right: 0px;
                 }
             }
         }
 
-        .container-my-journey{
+        .container-my-journey {
             flex-direction: column;
             align-items: center;
 
-            .my-journey{
+            .my-journey {
                 width: 80%;
-                height: 300px;
 
-                .new-challenges{
+                .new-challenges {
                     margin-top: 50px;
                 }
 
-                .my-journey-pic{
+                .my-journey-pic {
                     width: 50px;
                     height: 50px;
                 }
@@ -161,21 +156,19 @@
 }
 
 @media (max-width: 420px) {
-    .container-explain{
-
-        .explain-me{
-
-            img{
+    .container-explain {
+        .explain-me {
+            img {
                 height: 120px;
                 width: 120px;
             }
         }
     }
 
-    .container-my-journey{
+    .container-my-journey {
         margin-top: 50px;
-        .my-journey{
-            .new-challenges{
+        .my-journey {
+            .new-challenges {
                 margin-top: 0px;
             }
         }
@@ -183,18 +176,17 @@
 }
 
 @media (max-width: 300px) {
-    .container{
+    .container {
         padding-bottom: 20px;
     }
 
-    .container-my-journey{
-
-        .my-journey{
+    .container-my-journey {
+        .my-journey {
             font-size: 14px;
-            .new-challenges{
+            .new-challenges {
                 margin-top: 40px;
             }
-            .my-journey-pic{
+            .my-journey-pic {
                 width: 50px;
                 height: 50px;
             }
@@ -203,7 +195,7 @@
 }
 
 @media (max-height: 1366px) {
-    .container{
+    .container {
         height: 100%;
     }
 }
