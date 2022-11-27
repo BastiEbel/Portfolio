@@ -13,6 +13,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { NgParticlesModule } from 'ng-particles';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
@@ -31,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     NgxPageScrollCoreModule,
+    NgParticlesModule,
     BrowserModule,
     BrowserAnimationsModule,
     ScrollToModule.forRoot(),

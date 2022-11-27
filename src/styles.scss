@@ -3,6 +3,16 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fa2759;
+    border-radius: 5px;
+}
+
 html {
     scroll-behavior: smooth;
 }
